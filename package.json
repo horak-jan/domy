@@ -1,0 +1,37 @@
+{
+  "name": "domy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "./node_modules/.bin/webpack -w",
+    "start": "nodemon client/src/server.js",
+    "dev": "webpack --mode development && nodemon client/src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "axios": "0.19.2",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "css-loader": "^3.4.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "5.9.5",
+    "nodemon": "^2.0.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-hook-form": "^5.7.2",
+    "react-router-dom": "5.1.2",
+    "style-loader": "1.1.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
+}
