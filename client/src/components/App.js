@@ -15,6 +15,7 @@ import FourOhFour from "../views/FourOhFour";
 import Gardens from "../views/Gardens";
 import Contact from "../views/Contact";
 import Pergolas from "../views/Pergolas";
+import Pools from "../views/Pools";
 import About from "../views/About";
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
             <Route exact path="/domy" component={Houses} />
             <Route exact path="/zahrady" component={Gardens} />
             <Route exact path="/pergoly" component={Pergolas} />
+            <Route exact path="/bazeny" component={Pools} />
             <Route exact path="/kontakt" component={Contact} />
             <Route exact path="/o-nas" component={About} />
             <Route exact path="/terms" component={Terms} />

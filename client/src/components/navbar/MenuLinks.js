@@ -12,6 +12,9 @@ const MenuLinks = () => {
           <a href="/zahrady">Zahrady</a>
         </li>
         <li>
+          <a href="/bazeny">Bazény</a>
+        </li>
+        <li>
           <a href="/o-nas">O nás</a>
         </li>
         <li>
