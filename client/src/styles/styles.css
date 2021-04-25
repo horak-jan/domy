@@ -86,20 +86,112 @@
 .home .home-top {
   text-align: center;
   width: 100vw;
-  min-height: 70vh;
+  height: 25vh;
   background-image: url("../images/home-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.home .home-top h1 {
-  padding-top: 10vh;
-}
-
 .home .home-top p {
+  display: none;
   margin-top: 10vh;
   color: #e6e6e6;
+}
+
+.home .home-middle {
+  min-height: 40vh;
+  padding: 10px;
+}
+
+.home .home-middle h1 {
+  color: #f3f3f3;
+  font-size: 30px;
+  margin-top: 3vh;
+}
+
+.home .home-middle h2 {
+  font-size: 25px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  color: black;
+}
+
+.home .home-middle .home-presentation div {
+  margin: 5px auto;
+  width: 300px;
+  max-width: 320px;
+}
+
+.home .home-middle .home-presentation div img {
+  width: 100%;
+  height: 20vh;
+}
+
+.home .home-middle .home-presentation div div {
+  text-align: center;
+  position: relative;
+  width: 80%;
+  top: -50px;
+  background-color: #f8f8f8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 2px 6px 0px grey;
+          box-shadow: 0px 2px 6px 0px grey;
+}
+
+.home .home-middle .home-presentation div div img {
+  width: 120px;
+  height: 60px;
+}
+
+.home .home-middle .home-presentation div div h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.home .home-middle .home-presentation div div a {
+  text-align: center;
+  color: #539701;
+}
+
+.home .home-middle .home-presentation div div a:visited {
+  color: #539701;
+}
+
+.home .home-bottom {
+  min-height: 40vh;
+}
+
+.home .home-bottom .home-bottom-stripe {
+  background-color: #1c1c1c;
+  padding: 10px;
+  padding-top: 35px;
+  color: white;
+}
+
+.home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph h3 {
+  font-size: 50px;
+  margin-bottom: 2vh;
+}
+
+.home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph p {
+  font-size: 16px;
+  margin-bottom: 1vh;
+}
+
+.home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph p:first-of-type {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .terms {
@@ -264,6 +356,36 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .home .home-middle {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home .home-middle h1 {
+    font-size: 130px;
+    margin: 0;
+    text-align: center;
+  }
+  .home .home-middle h2 {
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top: -100px;
+  }
+  .home .home-middle .home-presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    top: -50px;
+  }
+  .home .home-middle .home-presentation div {
+    max-width: 620px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -300,7 +422,7 @@
   }
   .navbar .nav ul {
     display: inline;
-    width: 500px;
+    width: 600px;
   }
   .navbar .nav ul li {
     display: inline;
