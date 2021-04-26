@@ -85,7 +85,7 @@ $primary-dark-grey: #323232;
     text-align: center;
     width: 100vw;
     height: 25vh;
-    background-image: url("../images/home-background.jpg");
+    background-image: url("https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/home-background_tihykm.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -154,9 +154,13 @@ $primary-dark-grey: #323232;
     min-height: 40vh;
     .home-bottom-stripe {
       background-color: $primary-brown;
-      padding: 10px;
+      padding: 15px;
       padding-top: 35px;
+      padding-bottom: 90px;
       color: white;
+      h2 {
+        font-size: 20px;
+      }
       .home-bottom-text-paragraph {
         width: 200px;
         height: 200px;
@@ -174,6 +178,39 @@ $primary-dark-grey: #323232;
         p:first-of-type {
           font-weight: 700;
           text-transform: uppercase;
+        }
+      }
+    }
+    img {
+      width: 90%;
+      position: relative;
+      top: -114px;
+      margin: 0 auto;
+    }
+    .home-bottom-last {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;
+      top: -90px;
+      margin-bottom: 5vh;
+      h1 {
+        color: #f3f3f3;
+        font-weight: 700;
+        font-size: 50px;
+      }
+      .home-bottom-last-p {
+        text-align: center;
+        h1 {
+          color: #f3f3f3;
+          font-weight: 700;
+        }
+        h2 {
+          margin: 2vh 0;
+          text-align: center;
+        }
+        p {
+          text-align: justify;
         }
       }
     }
@@ -195,7 +232,6 @@ $primary-dark-grey: #323232;
   }
   ul {
     li {
-      // list-style-type: none;
       margin-top: 1vh;
     }
   }
@@ -287,7 +323,7 @@ $primary-dark-grey: #323232;
     padding-bottom: 10vh;
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url("../images/footer-image.png");
+    background-image: url("https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/footer-image_vmnkt5.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -341,6 +377,9 @@ $primary-dark-grey: #323232;
     }
   }
   .home {
+    .home-top {
+      height: 40vh;
+    }
     .home-middle {
       max-width: 1200px;
       margin-left: auto;
@@ -364,9 +403,6 @@ $primary-dark-grey: #323232;
         div {
           max-width: 620px;
           flex-basis: 40%;
-
-          // div {
-          // }
         }
       }
     }
@@ -422,6 +458,100 @@ $primary-dark-grey: #323232;
           }
           &:hover {
             border-bottom: $primary-green solid 2px;
+          }
+        }
+      }
+    }
+  }
+  .home {
+    .home-bottom {
+      .home-bottom-stripe {
+        padding-bottom: 300px;
+        h2 {
+          text-align: center;
+        }
+      }
+      img {
+        top: -290px;
+        width: 100%;
+      }
+      .home-bottom-last {
+        top: -200px;
+        h1 {
+          text-align: center;
+          font-size: 50px;
+        }
+        h2 {
+          text-align: center;
+        }
+        .home-bottom-last-p {
+          padding: 15px;
+          h2 {
+            font-size: 30px;
+            margin: 1vh 0 3vh;
+            margin: 0 auto;
+          }
+          p {
+            margin: 0 auto;
+            max-width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==================PC===================
+
+@media (min-width: 1000px) {
+  .home {
+    overflow: hidden;
+    .home-top {
+      height: 75vh;
+    }
+
+    .home-bottom {
+      height: 120vh;
+      .home-bottom-stripe {
+        display: flex;
+        padding-right: 40vw;
+        h2 {
+          position: absolute;
+        }
+        .home-bottom-text-paragraph {
+          margin-top: 10vh;
+        }
+      }
+
+      img {
+        width: 80%;
+        position: relative;
+        left: 45vw;
+        top: -74vh;
+      }
+
+      .home-bottom-last {
+        display: flex;
+        top: -80vh;
+        h1 {
+          position: absolute;
+        }
+        h2 {
+          position: absolute;
+          top: 75px;
+        }
+        .home-bottom-last-p {
+          margin-top: 10vh;
+          h1 {
+            position: relative;
+          }
+          h2 {
+            position: relative;
+            margin: 2vh 0;
+            top: 0;
+          }
+          p {
+            max-width: 400px;
           }
         }
       }

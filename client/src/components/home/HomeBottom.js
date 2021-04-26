@@ -1,7 +1,7 @@
 import { useState } from "react";
 import HomeBottomText from "./Home-bottom-text.json";
+import HomeBottomLast from "./HomeBottomLast";
 import HomeBottomTextParagraph from "./HomeBottomTextParagraph";
-import HomeBottomHouse from "../../images/new.png";
 const HomeBottom = () => {
   const [text, setText] = useState(HomeBottomText.text);
   return (
@@ -12,10 +12,14 @@ const HomeBottom = () => {
           dřevostavbu na klíč a my Vám jej upravíme na míru!
         </h2>
         {text.map((text) => (
-          <HomeBottomTextParagraph text={text} />
+          <HomeBottomTextParagraph key={text.big} text={text} />
         ))}
-        <img alt="house picture" src={HomeBottomHouse} />
       </div>
+      <img
+        alt="house picture"
+        src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390572/domy/new_n9di9s.png"
+      />
+      <HomeBottomLast />
     </div>
   );
 };

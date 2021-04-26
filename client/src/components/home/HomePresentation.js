@@ -1,43 +1,58 @@
-import PergolaIco from "../../images/pergola-ico.svg";
-import PoolIco from "../../images/pool-ico.svg";
-import HouseIco from "../../images/house-ico.svg";
-import GardenIco from "../../images/garden-ico.svg";
-import HomePergola from "../../images/home-pergola.jpg";
-import HomeGarden from "../../images/home-garden.jpg";
-import HomePool from "../../images/home-pool.jpg";
-import HomeHouse from "../../images/home-house.jpg";
-
 const HomePresentation = () => {
   return (
     <div className="home-presentation">
       <div>
-        <img src={HomeHouse} alt="House" />
+        <img
+          src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/home-house_run2t5.jpg"
+          alt="House"
+        />
         <div>
-          <img src={HouseIco} alt="House icon" />
+          <img
+            src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/house-ico_fhbpjh.svg"
+            alt="House icon"
+          />
           <h3>Domy</h3>
           <a href="/domy">Naše nabídka</a>
         </div>
       </div>
       <div>
-        <img src={HomePool} alt="Pool" />
+        <img
+          src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390572/domy/home-pool_dhzjij.jpg"
+          alt="Pool"
+        />
         <div>
-          <img src={PoolIco} alt="Pool icon" />
+          <img
+            src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/pool-ico_fgerdk.svg"
+            alt="Pool icon"
+          />
           <h3>Bazény</h3>
           <a href="/bazeny">Naše nabídka</a>
         </div>
       </div>
       <div>
-        <img src={HomePergola} alt="Pergola" />
+        <img
+          src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/home-pergola_ogxyrc.jpg"
+          alt="Pergola"
+        />
         <div>
-          <img src={PergolaIco} alt="Pergola icon" />
+          <img
+            src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390572/domy/pergola-ico_r2enie.svg"
+            alt="Pergola icon"
+          />
           <h3>Pergoly</h3>
           <a href="/pergoly">Naše nabídka</a>
         </div>
       </div>
       <div>
-        <img src={HomeGarden} alt="Garden" />
+        <img
+          src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/home-garden_djfj6z.jpg"
+          alt="Garden"
+        />
         <div>
-          <img src={GardenIco} alt="Garden icon" />
+          <img
+            src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/garden-ico_xhstua.svg"
+            alt="Garden icon"
+          />
           <h3>Zahrady</h3>
           <a href="/zahrady">Naše nabídka</a>
         </div>

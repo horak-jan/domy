@@ -87,7 +87,7 @@
   text-align: center;
   width: 100vw;
   height: 25vh;
-  background-image: url("../images/home-background.jpg");
+  background-image: url("https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390571/domy/home-background_tihykm.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,9 +166,14 @@
 
 .home .home-bottom .home-bottom-stripe {
   background-color: #1c1c1c;
-  padding: 10px;
+  padding: 15px;
   padding-top: 35px;
+  padding-bottom: 90px;
   color: white;
+}
+
+.home .home-bottom .home-bottom-stripe h2 {
+  font-size: 20px;
 }
 
 .home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph {
@@ -192,6 +197,46 @@
 .home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph p:first-of-type {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.home .home-bottom img {
+  width: 90%;
+  position: relative;
+  top: -114px;
+  margin: 0 auto;
+}
+
+.home .home-bottom .home-bottom-last {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  top: -90px;
+  margin-bottom: 5vh;
+}
+
+.home .home-bottom .home-bottom-last h1 {
+  color: #f3f3f3;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.home .home-bottom .home-bottom-last .home-bottom-last-p {
+  text-align: center;
+}
+
+.home .home-bottom .home-bottom-last .home-bottom-last-p h1 {
+  color: #f3f3f3;
+  font-weight: 700;
+}
+
+.home .home-bottom .home-bottom-last .home-bottom-last-p h2 {
+  margin: 2vh 0;
+  text-align: center;
+}
+
+.home .home-bottom .home-bottom-last .home-bottom-last-p p {
+  text-align: justify;
 }
 
 .terms {
@@ -303,7 +348,7 @@
   padding-bottom: 10vh;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: url("../images/footer-image.png");
+  background-image: url("https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/footer-image_vmnkt5.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -355,6 +400,9 @@
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+  }
+  .home .home-top {
+    height: 40vh;
   }
   .home .home-middle {
     max-width: 1200px;
@@ -441,6 +489,95 @@
   }
   .navbar .nav ul li:hover {
     border-bottom: #539701 solid 2px;
+  }
+  .home .home-bottom .home-bottom-stripe {
+    padding-bottom: 300px;
+  }
+  .home .home-bottom .home-bottom-stripe h2 {
+    text-align: center;
+  }
+  .home .home-bottom img {
+    top: -290px;
+    width: 100%;
+  }
+  .home .home-bottom .home-bottom-last {
+    top: -200px;
+  }
+  .home .home-bottom .home-bottom-last h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .home .home-bottom .home-bottom-last h2 {
+    text-align: center;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p {
+    padding: 15px;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p h2 {
+    font-size: 30px;
+    margin: 1vh 0 3vh;
+    margin: 0 auto;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p p {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home {
+    overflow: hidden;
+  }
+  .home .home-top {
+    height: 75vh;
+  }
+  .home .home-bottom {
+    height: 120vh;
+  }
+  .home .home-bottom .home-bottom-stripe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 40vw;
+  }
+  .home .home-bottom .home-bottom-stripe h2 {
+    position: absolute;
+  }
+  .home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph {
+    margin-top: 10vh;
+  }
+  .home .home-bottom img {
+    width: 80%;
+    position: relative;
+    left: 45vw;
+    top: -74vh;
+  }
+  .home .home-bottom .home-bottom-last {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -80vh;
+  }
+  .home .home-bottom .home-bottom-last h1 {
+    position: absolute;
+  }
+  .home .home-bottom .home-bottom-last h2 {
+    position: absolute;
+    top: 75px;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p {
+    margin-top: 10vh;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p h1 {
+    position: relative;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p h2 {
+    position: relative;
+    margin: 2vh 0;
+    top: 0;
+  }
+  .home .home-bottom .home-bottom-last .home-bottom-last-p p {
+    max-width: 400px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
