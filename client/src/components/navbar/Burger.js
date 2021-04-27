@@ -1,6 +1,4 @@
 import { useState } from "react";
-import BurgerIconClosed from "../../images/burger-menu-closed.png";
-import BurgerIconOpened from "../../images/burger-menu-opened.png";
 import BurgerMenu from "./BurgerMenu";
 const Burger = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,7 +14,11 @@ const Burger = () => {
         className="burger-button"
         onClick={() => setToggle(!toggle)}
         alt="menu button"
-        src={toggle ? BurgerIconOpened : BurgerIconClosed}
+        src={
+          toggle
+            ? "https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/burger-menu-opened_cubecv.png"
+            : "https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390570/domy/burger-menu-closed_xotl2s.png"
+        }
       />
 
       <BurgerMenu toggle={toggle} />

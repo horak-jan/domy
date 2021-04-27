@@ -1,8 +1,8 @@
 const HomeBottomLastP = (props) => {
-  const { number, header, p } = props.text;
+  const { numberAsString, header, p } = props.text;
   return (
     <div className="home-bottom-last-p">
-      <h1>{number}</h1>
+      <h1>{numberAsString}</h1>
       <h2>{header}</h2>
       <p>{p}</p>
     </div>

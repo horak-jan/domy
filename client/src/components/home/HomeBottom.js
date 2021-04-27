@@ -1,9 +1,29 @@
-import { useState } from "react";
-import HomeBottomText from "./Home-bottom-text.json";
+import { useEffect, useState } from "react";
+import Axios from "axios";
 import HomeBottomLast from "./HomeBottomLast";
 import HomeBottomTextParagraph from "./HomeBottomTextParagraph";
+
 const HomeBottom = () => {
-  const [text, setText] = useState(HomeBottomText.text);
+  const [text, setText] = useState([]);
+  const [lastText, setLastText] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+    const getTextForHomepage = async () => {
+      try {
+        const res = await Axios.get(`/api/hometext`);
+
+        setText(res.data.homeText[0].bottom);
+        setLastText(res.data.homeText[0].last);
+      } catch (error) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    getTextForHomepage();
+  }, []);
+
   return (
     <div className="home-bottom">
       <div className="home-bottom-stripe">
@@ -19,7 +39,7 @@ const HomeBottom = () => {
         alt="house picture"
         src="https://res.cloudinary.com/dsdaneoq8/image/upload/v1619390572/domy/new_n9di9s.png"
       />
-      <HomeBottomLast />
+      <HomeBottomLast text={lastText} />
     </div>
   );
 };

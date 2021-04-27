@@ -511,12 +511,14 @@ $primary-dark-grey: #323232;
     }
 
     .home-bottom {
-      height: 120vh;
+      height: 100vh;
       .home-bottom-stripe {
         display: flex;
         padding-right: 40vw;
+        padding-bottom: 0;
         h2 {
           position: absolute;
+          max-width: 60vw;
         }
         .home-bottom-text-paragraph {
           margin-top: 10vh;
@@ -524,15 +526,15 @@ $primary-dark-grey: #323232;
       }
 
       img {
-        width: 80%;
+        width: 710px;
         position: relative;
-        left: 45vw;
-        top: -74vh;
+        left: 50vw;
+        top: -305px;
       }
 
       .home-bottom-last {
         display: flex;
-        top: -80vh;
+        top: -400px;
         h1 {
           position: absolute;
         }
@@ -554,6 +556,16 @@ $primary-dark-grey: #323232;
             max-width: 400px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .home {
+    .home-bottom {
+      img {
+        width: 900px;
       }
     }
   }
