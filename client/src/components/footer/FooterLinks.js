@@ -24,7 +24,9 @@ const FooterLinks = () => {
         <div>Naše projekty</div>
         <div>Vlastní výroba</div>
         <div>Náš tým</div>
-        <div>O nás</div>
+        <div>
+          <a href="/o-nas">Kontakt</a>O nás
+        </div>
       </div>
 
       <div className="footer-links-group">
@@ -34,7 +36,9 @@ const FooterLinks = () => {
         <div>Jak na reklamaci</div>
         <div>Reakce zákazníků</div>
         <div>Naše realizace</div>
-        <div>Kontakt</div>
+        <div>
+          <a href="/kontakt">Kontakt</a>{" "}
+        </div>
       </div>
     </div>
   );

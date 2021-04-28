@@ -83,6 +83,107 @@
   display: none;
 }
 
+.contact h1 {
+  margin: 3vh auto 5vh;
+  text-align: center;
+}
+
+.contact h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 45vw;
+  width: 90px;
+  height: 0.4rem;
+  background: #539701;
+}
+
+.contact .contact-top {
+  padding: 10px;
+  background-color: #f9f6f6;
+}
+
+.contact .contact-top h2 {
+  margin: 2vh auto;
+  text-align: center;
+}
+
+.contact .contact-top .contact-top-content {
+  margin: 3vh auto;
+  max-width: 1200px;
+}
+
+.contact .contact-top .contact-top-content div {
+  width: 200px;
+  max-width: 350px;
+  margin: 2vh auto;
+  text-align: center;
+}
+
+.contact .contact-top .contact-top-content div img {
+  width: 50px;
+}
+
+.contact .contact-top .contact-top-content div h3 {
+  margin: 1vh auto 2vh;
+}
+
+.contact .contact-middle {
+  max-width: 1200px;
+  margin: 3vh auto;
+  padding: 10px;
+}
+
+.contact .contact-middle h3 {
+  text-align: center;
+}
+
+.contact .contact-middle .contact-form {
+  margin: 5vh auto;
+  text-align: center;
+}
+
+.contact .contact-middle .contact-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.contact .contact-middle input {
+  height: 35px;
+  font-size: 20px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: #bcbcbc 1px solid;
+}
+
+.contact .contact-middle .form-error {
+  color: #e1251b;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contact .contact-middle button {
+  margin: 3vh auto;
+  color: white;
+  background-color: #539701;
+  font-size: 15px;
+  width: 200px;
+  display: block;
+  height: 40px;
+}
+
+.contact .contact-bottom {
+  max-width: 1200px;
+}
+
+.contact .contact-bottom .contact-bottom-info {
+  border: 1px solid red;
+}
+
 .home .home-top {
   text-align: center;
   width: 100vw;
@@ -390,6 +491,14 @@
   letter-spacing: 0.04rem;
 }
 
+.footer .footer-links .footer-links-group div a {
+  color: white;
+}
+
+.footer .footer-links .footer-links-group div a:visited {
+  color: white;
+}
+
 @media (min-width: 640px) {
   .footer .footer-content h2 {
     width: 70vw;
@@ -437,6 +546,14 @@
 }
 
 @media (min-width: 768px) {
+  .contact .contact-top .contact-top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact .contact-middle input {
+    width: 350px;
+  }
   .navbar .burger {
     display: none;
   }

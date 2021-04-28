@@ -6,6 +6,8 @@ const newsletter = require("./newsletter");
 const pergola = require("./pergola");
 const homeText = require("./homeText");
 const house = require("./house");
+const contact = require("./contact");
+const address = require("./address");
 
 module.exports = (app) => {
   app.get("/", (req, res) => {
@@ -16,5 +18,7 @@ module.exports = (app) => {
   app.use("/api/garden", garden);
   app.use("/api/pergola", pergola);
   app.use("/api/hometext", homeText);
+  app.use("/api/contact", contact);
+  app.use("/api/address", address);
   app.use("/api/newsletter", newsletter);
 };
