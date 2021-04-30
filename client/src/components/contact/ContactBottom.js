@@ -1,36 +1,45 @@
-import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
-import { Component } from "react";
+import { useEffect, useState } from "react";
+import Axios from "axios";
+import ContactBottomInfo from "./ContactBottomInfo";
+import ContactBottomMap from "./ContactBottomMap";
 
-export class ContactBottom extends Component {
-  render() {
-    return (
-      <div className="contact-bottom">
-        <Map
-          style={{
-            width: "80vw",
-            height: "60vh",
-            // position: "relative",
-            // top: "-20px",
-          }}
-          google={this.props.google}
-          initialCenter={{
-            lat: this.props.lat,
-            lng: this.props.lng,
-          }}
-          zoom={14}
-        >
-          <Marker
-            onClick={this.onMarkerClick}
-            name="Těšíme se na Vás"
-            position={{ lat: this.props.lat, lng: this.props.lng }}
-          />
-        </Map>
-        <div className="contact-bottom-info">other info here</div>
-      </div>
-    );
-  }
-}
+const ContactBottom = () => {
+  const [contactInfo, setContactInfo] = useState();
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const getContactInfo = async () => {
+      try {
+        const res = await Axios.get("/api/address");
 
-export default GoogleApiWrapper({
-  apiKey: process.env.REACT_APP_GOOGLEAPIKEY,
-})(ContactBottom);
+        setContactInfo(res.data.address);
+      } catch (error) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    getContactInfo();
+  }, []);
+
+  return (
+    <div className="contact-bottom">
+      {isError && <div>Někde se stala chyba ...</div>}
+      {isLoading ? (
+        <div>'Načítám...'</div>
+      ) : (
+        contactInfo.map((contactInfo) => (
+          <>
+            <ContactBottomMap
+              lat={contactInfo.lat}
+              lng={contactInfo.long}
+              key={contactInfo.phone}
+            />
+            <ContactBottomInfo key={contactInfo.address} info={contactInfo} />
+          </>
+        ))
+      )}
+    </div>
+  );
+};
+
+export default ContactBottom;

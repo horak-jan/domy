@@ -165,9 +165,33 @@ $primary-dark-grey: #323232;
     }
   }
   .contact-bottom {
-    max-width: 1200px;
+    min-height: 120vh;
+    width: 100vw;
+    margin: 0 auto;
+    .contact-bottom-map {
+      margin: 2vh 0;
+      width: 100vw;
+      height: 40vh;
+      max-width: 400px;
+    }
     .contact-bottom-info {
-      border: 1px solid red;
+      margin: 3vh auto;
+      padding: 0 15vw;
+      text-align: center;
+      h2 {
+        margin-bottom: 4vh;
+      }
+
+      img {
+        display: inline-block;
+      }
+      p {
+        margin-left: 10px;
+        font-size: 22px;
+        position: relative;
+        display: inline-block;
+        top: -8px;
+      }
     }
   }
 }
@@ -517,9 +541,22 @@ $primary-dark-grey: #323232;
     .contact-top {
       .contact-top-content {
         display: flex;
+
+        div {
+          h3 {
+            font-size: 23px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
       }
     }
+
     .contact-middle {
+      h3 {
+        font-size: 22px;
+      }
       input {
         width: 350px;
       }
@@ -572,7 +609,7 @@ $primary-dark-grey: #323232;
             color: black;
           }
           &:hover {
-            border-bottom: $primary-green solid 2px;
+            border-bottom: $primary-green solid 3px;
           }
         }
       }
@@ -675,6 +712,9 @@ $primary-dark-grey: #323232;
     }
   }
 }
+
+//contact
+// PC
 
 @media (min-width: 1500px) {
   .home {

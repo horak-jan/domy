@@ -177,11 +177,38 @@
 }
 
 .contact .contact-bottom {
-  max-width: 1200px;
+  min-height: 120vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.contact .contact-bottom .contact-bottom-map {
+  margin: 2vh 0;
+  width: 100vw;
+  height: 40vh;
+  max-width: 400px;
 }
 
 .contact .contact-bottom .contact-bottom-info {
-  border: 1px solid red;
+  margin: 3vh auto;
+  padding: 0 15vw;
+  text-align: center;
+}
+
+.contact .contact-bottom .contact-bottom-info h2 {
+  margin-bottom: 4vh;
+}
+
+.contact .contact-bottom .contact-bottom-info img {
+  display: inline-block;
+}
+
+.contact .contact-bottom .contact-bottom-info p {
+  margin-left: 10px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  top: -8px;
 }
 
 .home .home-top {
@@ -551,6 +578,15 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .contact .contact-top .contact-top-content div h3 {
+    font-size: 23px;
+  }
+  .contact .contact-top .contact-top-content div p {
+    font-size: 20px;
+  }
+  .contact .contact-middle h3 {
+    font-size: 22px;
+  }
   .contact .contact-middle input {
     width: 350px;
   }
@@ -605,7 +641,7 @@
     color: black;
   }
   .navbar .nav ul li:hover {
-    border-bottom: #539701 solid 2px;
+    border-bottom: #539701 solid 3px;
   }
   .home .home-bottom .home-bottom-stripe {
     padding-bottom: 300px;
