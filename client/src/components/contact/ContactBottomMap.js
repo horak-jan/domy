@@ -32,5 +32,5 @@ export class ContactBottomMap extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.REACT_APP_GOOGLEAPIKEY,
+  apiKey: "AIzaSyA3LJKfQp1Y1KwAnnQRjLWNwGh7kjKWRgc",
 })(ContactBottomMap);
