@@ -3,3 +3,4 @@ public/
 client/src/images/
 client/src/house1.json
 node_modules
+client/src/components/contact/ContactBottomMap.js

@@ -11,7 +11,7 @@ $primary-dark-grey: #323232;
 }
 
 // navbar
-// MOBILE
+// MOBIL
 .navbar {
   width: 100vw;
   border-bottom: 2px solid black;
@@ -78,8 +78,89 @@ $primary-dark-grey: #323232;
   }
 }
 
+// gardens
+// MOBIL
+.gardens {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  h1 {
+    text-align: center;
+    margin: 3vh 0 5vh;
+  }
+  p {
+    margin: 0 auto 2vh;
+    text-align: center;
+  }
+  .gardens-slide {
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 3vh;
+    img {
+      width: 100vw;
+      height: 30vh;
+    }
+    .gardens-slide-content {
+      position: relative;
+      top: -260px;
+      height: 85%;
+      width: 85%;
+      margin: auto;
+      background-color: rgba(240, 240, 240, 0.8);
+      padding: 15px;
+
+      h1 {
+        text-align: center;
+        margin: 3vh auto;
+      }
+      p {
+        margin: 5px auto;
+      }
+      button {
+        margin: 2vh auto;
+        background-color: #539701;
+        width: 200px;
+        display: block;
+        height: 40px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 15px;
+        }
+        a:visited {
+          color: white;
+        }
+      }
+    }
+  }
+  h2 {
+    margin: 5vh auto 1vh;
+    text-align: center;
+  }
+  .garden-images {
+    min-height: 60vh;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 4vh;
+
+    img {
+      width: 90vw;
+      height: 30vh;
+    }
+    .dialog {
+      box-shadow: 0 8px 6px -6px black;
+    }
+
+    .opened-image {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}
+
 // contact
-// MOBILE
+// MOBIL
 .contact {
   h1 {
     margin: 3vh auto 5vh;
@@ -197,7 +278,7 @@ $primary-dark-grey: #323232;
 }
 
 // home
-// MOBILE
+// MOBIL
 .home {
   .home-top {
     text-align: center;
@@ -336,7 +417,7 @@ $primary-dark-grey: #323232;
 }
 
 // terms and conditions
-// MOBILE
+// MOBIL
 .terms {
   padding: 5vh 5vw;
   h2,
@@ -366,7 +447,7 @@ $primary-dark-grey: #323232;
 }
 
 // footer
-// MOBILE
+// MOBIL
 .footer {
   width: 100vw;
   color: $footer-grey;
@@ -473,6 +554,7 @@ $primary-dark-grey: #323232;
         line-height: 1.5rem;
         letter-spacing: 0.04rem;
         a {
+          text-decoration: none;
           color: white;
         }
         a:visited {
@@ -538,6 +620,7 @@ $primary-dark-grey: #323232;
   // contact
   // TABLET
   .contact {
+    max-width: 1920px;
     .contact-top {
       .contact-top-content {
         display: flex;
@@ -559,6 +642,31 @@ $primary-dark-grey: #323232;
       }
       input {
         width: 350px;
+      }
+    }
+  }
+
+  //gardens
+  // TABLET
+  .gardens {
+    .gardens-slide {
+      height: 60vh;
+      img {
+        height: 60vh;
+      }
+      .gardens-slide-content {
+        height: 25vh;
+        width: 60vw;
+      }
+    }
+    .garden-images {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+      .opened-image {
+        height: 55vh;
       }
     }
   }
@@ -711,10 +819,33 @@ $primary-dark-grey: #323232;
       }
     }
   }
-}
 
-//contact
-// PC
+  .gardens {
+    .gardens-slide {
+      max-width: 1200px;
+      height: 70vh;
+      margin: 0 auto 3vh;
+      img {
+        height: 70vh;
+        max-width: 1200px;
+      }
+      .gardens-slide-content {
+        height: 25vh;
+        max-width: 600px;
+      }
+    }
+    .garden-images {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 25vw;
+      }
+      .opened-image {
+        height: 65vh;
+      }
+    }
+  }
+}
 
 @media (min-width: 1500px) {
   .home {
