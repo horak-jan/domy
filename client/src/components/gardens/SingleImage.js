@@ -20,7 +20,7 @@ const SingleImage = (props) => {
             className="opened-image"
             src={props.src}
             onClick={() => toggleLargeImage(showLargeImage)}
-            alt="no image"
+            alt="image"
           />
         </dialog>
       )}

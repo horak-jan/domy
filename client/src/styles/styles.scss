@@ -150,11 +150,12 @@ $primary-dark-grey: #323232;
     }
     .dialog {
       box-shadow: 0 8px 6px -6px black;
-    }
-
-    .opened-image {
-      width: 100%;
-      height: 40vh;
+      position: fixed;
+      top: 25vh;
+      .opened-image {
+        width: 100%;
+        height: 40vh;
+      }
     }
   }
 }
@@ -384,6 +385,7 @@ $primary-dark-grey: #323232;
       width: 90%;
       position: relative;
       top: -114px;
+      left: 5%;
       margin: 0 auto;
     }
     .home-bottom-last {
@@ -734,6 +736,7 @@ $primary-dark-grey: #323232;
       img {
         top: -290px;
         width: 100%;
+        left: 0;
       }
       .home-bottom-last {
         top: -200px;
@@ -840,8 +843,13 @@ $primary-dark-grey: #323232;
       img {
         width: 25vw;
       }
-      .opened-image {
-        height: 65vh;
+      .dialog {
+        height: 100%;
+        top: 0;
+        left: 11vw;
+        .opened-image {
+          height: 100%;
+        }
       }
     }
   }

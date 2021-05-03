@@ -167,9 +167,11 @@
 .gardens .garden-images .dialog {
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
+  position: fixed;
+  top: 25vh;
 }
 
-.gardens .garden-images .opened-image {
+.gardens .garden-images .dialog .opened-image {
   width: 100%;
   height: 40vh;
 }
@@ -422,6 +424,7 @@
   width: 90%;
   position: relative;
   top: -114px;
+  left: 5%;
   margin: 0 auto;
 }
 
@@ -770,6 +773,7 @@
   .home .home-bottom img {
     top: -290px;
     width: 100%;
+    left: 0;
   }
   .home .home-bottom .home-bottom-last {
     top: -200px;
@@ -875,8 +879,13 @@
   .gardens .garden-images img {
     width: 25vw;
   }
-  .gardens .garden-images .opened-image {
-    height: 65vh;
+  .gardens .garden-images .dialog {
+    height: 100%;
+    top: 0;
+    left: 11vw;
+  }
+  .gardens .garden-images .dialog .opened-image {
+    height: 100%;
   }
 }
 
