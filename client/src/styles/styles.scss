@@ -152,7 +152,7 @@ $primary-dark-grey: #323232;
       box-shadow: 0 8px 6px -6px black;
       position: fixed;
       top: 25vh;
-      .opened-image {
+      .opened-large-image {
         width: 100%;
         height: 40vh;
       }
@@ -848,8 +848,8 @@ $primary-dark-grey: #323232;
         height: 100%;
         top: 0;
         left: 11vw;
-        z-index: 1;
-        .opened-image {
+        z-index: 10;
+        .opened-large-image {
           height: 100%;
         }
       }
