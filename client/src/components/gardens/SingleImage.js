@@ -8,21 +8,24 @@ const SingleImage = (props) => {
   };
   return (
     <>
-      <img src={props.src} alt="img" onClick={() => toggleLargeImage()} />
+      <img
+        src={props.src}
+        alt="thumbnail img"
+        onClick={() => toggleLargeImage()}
+      />
 
       {showLargeImage && (
-        <dialog
-          className="dialog"
-          open
+        <div
+          className="large-image"
           onClick={() => toggleLargeImage(showLargeImage)}
         >
           <img
-            className="opened-image"
+            className="opened-large-image"
             src={props.src}
             onClick={() => toggleLargeImage(showLargeImage)}
-            alt="image"
+            alt="opened-large-image"
           />
-        </dialog>
+        </div>
       )}
     </>
   );

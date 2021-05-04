@@ -148,7 +148,7 @@ $primary-dark-grey: #323232;
       width: 90vw;
       height: 30vh;
     }
-    .dialog {
+    .large-image {
       box-shadow: 0 8px 6px -6px black;
       position: fixed;
       top: 25vh;
@@ -533,6 +533,7 @@ $primary-dark-grey: #323232;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 5vh;
+    z-index: 1;
 
     .footer-links-group {
       margin-bottom: 4vh;
@@ -843,10 +844,11 @@ $primary-dark-grey: #323232;
       img {
         width: 25vw;
       }
-      .dialog {
+      .large-image {
         height: 100%;
         top: 0;
         left: 11vw;
+        z-index: 1;
         .opened-image {
           height: 100%;
         }
