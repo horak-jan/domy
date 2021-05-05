@@ -83,6 +83,30 @@
   display: none;
 }
 
+.fourOhFour {
+  min-height: 40vh;
+  padding: 15px;
+}
+
+.fourOhFour h2 {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.fourOhFour p {
+  text-align: center;
+}
+
+.fourOhFour p a {
+  font-size: 23px;
+  color: #539701;
+}
+
+.fourOhFour p a:visited {
+  color: #539701;
+}
+
 .gardens {
   min-height: 100vh;
   width: 100vw;
@@ -879,6 +903,9 @@
   }
   .gardens .garden-images img {
     width: 25vw;
+  }
+  .gardens .garden-images:hover {
+    background-color: rgba(255, 255, 255, 0.3);
   }
   .gardens .garden-images .large-image {
     height: 100%;

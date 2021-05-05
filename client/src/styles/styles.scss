@@ -78,6 +78,27 @@ $primary-dark-grey: #323232;
   }
 }
 
+// 404
+// mobil
+.fourOhFour {
+  min-height: 40vh;
+  padding: 15px;
+  h2 {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  p {
+    text-align: center;
+    a {
+      font-size: 23px;
+      color: $primary-green;
+    }
+    a:visited {
+      color: $primary-green;
+    }
+  }
+}
 // gardens
 // MOBIL
 .gardens {
@@ -844,6 +865,10 @@ $primary-dark-grey: #323232;
       img {
         width: 25vw;
       }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
       .large-image {
         height: 100%;
         top: 0;
