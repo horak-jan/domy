@@ -1,4 +1,4 @@
-import SingleImage from "./SingleImage";
+import SingleImage from "./singleImage/SingleImage";
 
 const GardenImages = (props) => {
   const { isLoading, images } = props;

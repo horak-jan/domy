@@ -1,9 +1,10 @@
 import useDbData from "../utils/useDbData";
-import SingleImage from "./SingleImage";
+import SingleImage from "./singleImage/SingleImage";
 
 const GardenInfo = () => {
   const [loadedData, isLoading, isError] = useDbData("image");
 
+  // const imagesToShowInGallery = loadedData.image[0].imagesGarden;
   return (
     <div className="garden-info">
       <h1>Zahrady</h1>

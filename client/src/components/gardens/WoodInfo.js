@@ -1,5 +1,5 @@
 import useDbData from "../utils/useDbData";
-import SingleImage from "./SingleImage";
+import SingleImage from "./singleImage/SingleImage";
 
 const WoodInfo = () => {
   const [loadedData, isLoading, isError] = useDbData("image");
