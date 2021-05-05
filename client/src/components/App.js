@@ -14,8 +14,8 @@ const Contact = lazy(() => import("../views/Contact"));
 const Gardens = lazy(() => import("../views/Gardens"));
 const GardenInfo = lazy(() => import("./gardens/GardenInfo"));
 const WoodInfo = lazy(() => import("./gardens/WoodInfo"));
+const FourOhFour = lazy(() => import("../views/FourOhFour"));
 
-import FourOhFour from "../views/FourOhFour";
 import Pergolas from "../views/Pergolas";
 import Pools from "../views/Pools";
 import About from "../views/About";
@@ -46,7 +46,7 @@ const App = () => {
           <Switch>
             <Route exact path="/domy" component={Houses} />
             <Route exact path="/zahrady" component={Gardens} />
-            <Route exact path="drevene-prvky" component={WoodInfo} />
+            <Route exact path="/drevene-prvky" component={WoodInfo} />
             <Route exact path="/realizace" component={GardenInfo} />
             <Route exact path="/pergoly" component={Pergolas} />
             <Route exact path="/bazeny" component={Pools} />

@@ -514,6 +514,52 @@
   margin: 0 auto;
 }
 
+.garden-info,
+.wood-info {
+  min-height: 50vh;
+  text-align: center;
+}
+
+.garden-info h1,
+.garden-info h2,
+.wood-info h1,
+.wood-info h2 {
+  margin-top: 5vh;
+}
+
+.garden-info p,
+.wood-info p {
+  margin-top: 3vh;
+}
+
+.garden-info .gallery,
+.wood-info .gallery {
+  min-height: 60vh;
+  width: 100vw;
+  text-align: center;
+  margin: 5vh auto 4vh;
+}
+
+.garden-info .gallery img,
+.wood-info .gallery img {
+  width: 90vw;
+  height: 30vh;
+}
+
+.garden-info .gallery .large-image,
+.wood-info .gallery .large-image {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+  position: fixed;
+  top: 25vh;
+}
+
+.garden-info .gallery .large-image .opened-large-image,
+.wood-info .gallery .large-image .opened-large-image {
+  width: 100%;
+  height: 40vh;
+}
+
 .footer {
   width: 100vw;
   color: #bcbcbc;

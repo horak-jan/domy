@@ -20,7 +20,6 @@ const useDbData = (dataToLoad) => {
     getDataToLoad();
   }, []);
 
-  console.log(dataToLoad);
   return [loadedData, isLoading, isError];
 };
 
