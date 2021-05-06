@@ -164,17 +164,22 @@ $primary-dark-grey: #323232;
     text-align: center;
     margin-bottom: 4vh;
 
-    img {
+    .thumbnail {
       width: 90vw;
       height: 30vh;
+      margin: 0 auto;
     }
-    .large-image {
+    .gallery-large-image {
       box-shadow: 0 8px 6px -6px black;
       position: fixed;
       top: 25vh;
-      .opened-large-image {
-        width: 100%;
-        height: 40vh;
+      left: 0;
+      z-index: 10;
+      width: 100vw;
+
+      .gallery-opened-large-image {
+        width: 100vw;
+        height: 50vh;
       }
     }
   }
@@ -482,23 +487,29 @@ $primary-dark-grey: #323232;
     max-width: 350px;
   }
 
+  // MOBIL
   .gallery {
-    min-height: 60vh;
+    min-height: 90vh;
     width: 100vw;
     text-align: center;
     margin: 5vh auto 4vh;
 
-    img {
+    .thumbnail {
       width: 90vw;
       height: 30vh;
+      margin: 0 auto;
     }
-    .large-image {
+    .gallery-large-image {
       box-shadow: 0 8px 6px -6px black;
       position: fixed;
       top: 25vh;
-      .opened-large-image {
-        width: 100%;
-        height: 40vh;
+      left: 0;
+      z-index: 10;
+      width: 100vw;
+
+      .gallery-opened-large-image {
+        width: 100vw;
+        height: 50vh;
       }
     }
   }
@@ -721,10 +732,10 @@ $primary-dark-grey: #323232;
     .garden-images {
       display: flex;
       flex-wrap: wrap;
-      img {
+      .thumbnail {
         width: 50vw;
       }
-      .opened-image {
+      .gallery-opened-large-image {
         height: 55vh;
       }
     }
@@ -831,10 +842,10 @@ $primary-dark-grey: #323232;
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    img {
+    .thumbnail {
       width: 50vw;
     }
-    .opened-image {
+    .gallery-opened-large-image {
       height: 55vh;
     }
   }
@@ -847,17 +858,19 @@ $primary-dark-grey: #323232;
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      img {
+      .thumbnail {
         width: 25vw;
       }
 
-      .large-image {
-        height: 100%;
-        top: 0;
-        left: 11vw;
+      .gallery-large-image {
+        height: 90vh;
         z-index: 10;
-        .opened-large-image {
+        width: 80vw;
+        top: 5vh;
+        left: 10vw;
+        .gallery-opened-large-image {
           height: 100%;
+          width: 100%;
         }
       }
     }
@@ -917,7 +930,7 @@ $primary-dark-grey: #323232;
       }
     }
   }
-
+  // PC
   .gardens {
     .gardens-slide {
       max-width: 1200px;
@@ -935,17 +948,19 @@ $primary-dark-grey: #323232;
     .garden-images {
       display: flex;
       flex-wrap: wrap;
-      img {
+      .thumbnail {
         width: 25vw;
       }
 
-      .large-image {
-        height: 100%;
-        top: 0;
-        left: 11vw;
+      .gallery-large-image {
+        height: 90vh;
         z-index: 10;
-        .opened-large-image {
+        width: 80vw;
+        top: 5vh;
+        left: 10vw;
+        .gallery-opened-large-image {
           height: 100%;
+          width: 100%;
         }
       }
     }

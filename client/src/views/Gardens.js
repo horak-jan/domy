@@ -1,5 +1,5 @@
 import GardenImages from "../components/gardens/GardenImages";
-import GardenSlide from "../components/gardens/GardenSlide";
+import GardenSlide from "../components/gardens/gardenSlide/GardenSlide";
 import { useEffect, useState } from "react";
 import Axios from "axios";
 

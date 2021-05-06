@@ -183,21 +183,25 @@
   margin-bottom: 4vh;
 }
 
-.gardens .garden-images img {
+.gardens .garden-images .thumbnail {
   width: 90vw;
   height: 30vh;
+  margin: 0 auto;
 }
 
-.gardens .garden-images .large-image {
+.gardens .garden-images .gallery-large-image {
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
   position: fixed;
   top: 25vh;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
 }
 
-.gardens .garden-images .large-image .opened-large-image {
-  width: 100%;
-  height: 40vh;
+.gardens .garden-images .gallery-large-image .gallery-opened-large-image {
+  width: 100vw;
+  height: 50vh;
 }
 
 .contact h1 {
@@ -536,30 +540,34 @@
 
 .garden-info .gallery,
 .wood-info .gallery {
-  min-height: 60vh;
+  min-height: 90vh;
   width: 100vw;
   text-align: center;
   margin: 5vh auto 4vh;
 }
 
-.garden-info .gallery img,
-.wood-info .gallery img {
+.garden-info .gallery .thumbnail,
+.wood-info .gallery .thumbnail {
   width: 90vw;
   height: 30vh;
+  margin: 0 auto;
 }
 
-.garden-info .gallery .large-image,
-.wood-info .gallery .large-image {
+.garden-info .gallery .gallery-large-image,
+.wood-info .gallery .gallery-large-image {
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
   position: fixed;
   top: 25vh;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
 }
 
-.garden-info .gallery .large-image .opened-large-image,
-.wood-info .gallery .large-image .opened-large-image {
-  width: 100%;
-  height: 40vh;
+.garden-info .gallery .gallery-large-image .gallery-opened-large-image,
+.wood-info .gallery .gallery-large-image .gallery-opened-large-image {
+  width: 100vw;
+  height: 50vh;
 }
 
 .footer {
@@ -778,10 +786,10 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gardens .garden-images img {
+  .gardens .garden-images .thumbnail {
     width: 50vw;
   }
-  .gardens .garden-images .opened-image {
+  .gardens .garden-images .gallery-opened-large-image {
     height: 55vh;
   }
   .navbar .burger {
@@ -890,13 +898,13 @@
       flex-wrap: wrap;
 }
 
-.garden-info .gallery img,
-.wood-info .gallery img {
+.garden-info .gallery .thumbnail,
+.wood-info .gallery .thumbnail {
   width: 50vw;
 }
 
-.garden-info .gallery .opened-image,
-.wood-info .gallery .opened-image {
+.garden-info .gallery .gallery-opened-large-image,
+.wood-info .gallery .gallery-opened-large-image {
   height: 55vh;
 }
 
@@ -909,20 +917,22 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .garden-info .gallery img,
-  .wood-info .gallery img {
+  .garden-info .gallery .thumbnail,
+  .wood-info .gallery .thumbnail {
     width: 25vw;
   }
-  .garden-info .gallery .large-image,
-  .wood-info .gallery .large-image {
-    height: 100%;
-    top: 0;
-    left: 11vw;
+  .garden-info .gallery .gallery-large-image,
+  .wood-info .gallery .gallery-large-image {
+    height: 90vh;
     z-index: 10;
+    width: 80vw;
+    top: 5vh;
+    left: 10vw;
   }
-  .garden-info .gallery .large-image .opened-large-image,
-  .wood-info .gallery .large-image .opened-large-image {
+  .garden-info .gallery .gallery-large-image .gallery-opened-large-image,
+  .wood-info .gallery .gallery-large-image .gallery-opened-large-image {
     height: 100%;
+    width: 100%;
   }
   .home {
     overflow: hidden;
@@ -1000,17 +1010,19 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gardens .garden-images img {
+  .gardens .garden-images .thumbnail {
     width: 25vw;
   }
-  .gardens .garden-images .large-image {
-    height: 100%;
-    top: 0;
-    left: 11vw;
+  .gardens .garden-images .gallery-large-image {
+    height: 90vh;
     z-index: 10;
+    width: 80vw;
+    top: 5vh;
+    left: 10vw;
   }
-  .gardens .garden-images .large-image .opened-large-image {
+  .gardens .garden-images .gallery-large-image .gallery-opened-large-image {
     height: 100%;
+    width: 100%;
   }
 }
 

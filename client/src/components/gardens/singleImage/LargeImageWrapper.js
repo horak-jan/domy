@@ -3,7 +3,7 @@ import OpenedLargeImage from "./OpenedLargeImage";
 const LargeImageWrapper = (props) => {
   return (
     <div
-      className="large-image"
+      className="gallery-large-image"
       onClick={() => props.toggleLargeImage(props.showLargeImage)}
     >
       <OpenedLargeImage

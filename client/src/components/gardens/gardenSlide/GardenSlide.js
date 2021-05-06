@@ -1,6 +1,5 @@
-import ButtonWrapper from "./gardenSlide/ButtonWrapper";
-import GardenSlideImage from "./gardenSlide/GardenSlideImage";
-import GardensSlideContent from "./gardenSlide/GardensSlideContent";
+import GardenSlideImage from "./GardenSlideImage";
+import GardensSlideContent from "./GardensSlideContent";
 
 const GardenSlide = (props) => {
   const { content } = props;

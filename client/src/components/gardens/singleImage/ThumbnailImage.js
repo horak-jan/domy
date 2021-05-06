@@ -3,6 +3,7 @@ const ThumbnailImage = (props) => {
     <img
       src={props.src}
       alt="thumbnail img"
+      className="thumbnail"
       onClick={() => props.toggleLargeImage()}
     />
   );

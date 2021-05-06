@@ -10,25 +10,9 @@ const SingleImage = (props) => {
   };
   return (
     <>
-      {/* <img
-        src={props.src}
-        alt="thumbnail img"
-        onClick={() => toggleLargeImage()}
-      /> */}
       <ThumbnailImage toggleLargeImage={toggleLargeImage} src={props.src} />
 
       {showLargeImage && (
-        // <div
-        //   className="large-image"
-        //   onClick={() => toggleLargeImage(showLargeImage)}
-        // >
-        //   <img
-        //     className="opened-large-image"
-        //     src={props.src}
-        //     onClick={() => toggleLargeImage(showLargeImage)}
-        //     alt="opened-large-image"
-        //   />
-        // </div>
         <LargeImageWrapper
           showLargeImage={showLargeImage}
           toggleLargeImage={toggleLargeImage}
