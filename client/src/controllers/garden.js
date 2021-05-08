@@ -1,7 +1,7 @@
 const Garden = require("../models/garden");
 
 // GET api/garden
-//  Returns all garden
+//  Returns one garden
 
 exports.index = async (req, res) => {
   try {

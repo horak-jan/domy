@@ -1,33 +1,22 @@
-import { useEffect, useState } from "react";
-import Axios from "axios";
 import ContactBottomInfo from "./ContactBottomInfo";
 import ContactBottomMap from "./ContactBottomMap";
+import Loading from "../utils/Loading";
+import ErrorMessage from "../utils/ErrorMessage";
+import useDbData from "../utils/useDbData";
 
 const ContactBottom = () => {
-  const [contactInfo, setContactInfo] = useState();
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
-  useEffect(() => {
-    const getContactInfo = async () => {
-      try {
-        const res = await Axios.get("/api/address");
+  const [loadedData, isLoading, hasError] = useDbData("address");
 
-        setContactInfo(res.data.address);
-      } catch (error) {
-        setIsError(true);
-      }
-      setIsLoading(false);
-    };
-    getContactInfo();
-  }, []);
+  let { address } = loadedData;
 
   return (
     <div className="contact-bottom">
-      {isError && <div>Někde se stala chyba ...</div>}
-      {isLoading ? (
-        <div>'Načítám...'</div>
+      {hasError ? (
+        <ErrorMessage />
+      ) : isLoading ? (
+        <Loading />
       ) : (
-        contactInfo.map((contactInfo) => (
+        address.map((contactInfo) => (
           <>
             <ContactBottomMap
               lat={contactInfo.lat}

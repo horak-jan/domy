@@ -1,26 +1,13 @@
 import GardenImages from "../components/gardens/GardenImages";
 import GardenSlide from "../components/gardens/gardenSlide/GardenSlide";
-import { useEffect, useState } from "react";
-import Axios from "axios";
+import ErrorMessage from "../components/utils/ErrorMessage";
+import Loading from "../components/utils/Loading";
+import useDbData from "../components/utils/useDbData";
 
 const Gardens = () => {
-  const [gardensContent, setGardensContent] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
+  const [loadedData, isLoading, hasError] = useDbData("garden");
+  let { garden } = loadedData;
 
-  useEffect(() => {
-    const getGardensContent = async () => {
-      try {
-        const res = await Axios.get(`/api/garden`);
-
-        setGardensContent(...res.data.garden);
-      } catch (error) {
-        setIsError(true);
-      }
-      setIsLoading(false);
-    };
-    getGardensContent();
-  }, []);
   return (
     <div className="gardens">
       <h1>Splníme vám sen o krásné zahradě</h1>
@@ -28,16 +15,18 @@ const Gardens = () => {
       <p>
         Přestaňte o své zahradě jen snít! Vaše představy díky nám dostanou tvar.
       </p>
-      {isLoading ? (
-        <p style={{ textAlign: "center" }}>Načítám</p>
+      {hasError ? (
+        <ErrorMessage />
+      ) : isLoading ? (
+        <Loading />
       ) : (
-        gardensContent.gardenSlide.map((slide) => (
+        garden.gardenSlide.map((slide) => (
           <GardenSlide key={slide.header} content={slide} />
         ))
       )}
       <h2>Naše práce, vaše radost</h2>
 
-      <GardenImages isLoading={isLoading} images={gardensContent.images} />
+      {isLoading ? <Loading /> : <GardenImages images={garden.images} />}
     </div>
   );
 };

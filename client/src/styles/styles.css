@@ -83,6 +83,43 @@
   display: none;
 }
 
+.loading-or-error {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.pool {
+  min-height: 50vh;
+  width: 100vw;
+}
+
+.pool .pool-top {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(https://res.cloudinary.com/dsdaneoq8/image/upload/v1620325405/domy/poolmain_uwzohf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pool .pool-top h1 {
+  text-align: center;
+  position: relative;
+  top: 20vh;
+  background-color: #539701;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pool .pool-middle {
+  min-height: 40vh;
+}
+
+.pool .pool-middle p {
+  text-align: center;
+  margin-top: 5vh;
+}
+
 .fourOhFour {
   min-height: 40vh;
   padding: 15px;
@@ -247,6 +284,7 @@
 
 .contact .contact-top .contact-top-content div h3 {
   margin: 1vh auto 2vh;
+  color: #539701;
 }
 
 .contact .contact-middle {
@@ -769,6 +807,9 @@
   .contact .contact-middle input {
     width: 350px;
   }
+  .pool .pool-top {
+    height: 40vh;
+  }
   .gardens .gardens-slide {
     height: 60vh;
   }
@@ -1023,6 +1064,12 @@
   .gardens .garden-images .gallery-large-image .gallery-opened-large-image {
     height: 100%;
     width: 100%;
+  }
+  .pool {
+    overflow: hidden;
+  }
+  .pool .pool-top {
+    height: 75vh;
   }
 }
 

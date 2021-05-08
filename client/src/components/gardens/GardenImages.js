@@ -1,15 +1,14 @@
+import Loading from "../utils/Loading";
 import SingleImage from "./singleImage/SingleImage";
 
 const GardenImages = (props) => {
-  const { isLoading, images } = props;
+  const { images } = props;
 
   return (
     <div className="garden-images">
-      {isLoading ? (
-        <p style={{ textAlign: "center" }}>Načítám</p>
-      ) : (
-        images.map((image) => <SingleImage key={image} src={image} />)
-      )}
+      {images.map((image) => (
+        <SingleImage key={image} src={image} />
+      ))}
     </div>
   );
 };

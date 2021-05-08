@@ -78,6 +78,43 @@ $primary-dark-grey: #323232;
   }
 }
 
+// loading a error messages
+// MOBIL
+.loading-or-error {
+  text-align: center;
+  margin-top: 5vh;
+}
+// pool
+// MOBIL
+.pool {
+  min-height: 50vh;
+  width: 100vw;
+
+  .pool-top {
+    width: 100vw;
+    height: 25vh;
+    background-image: url(https://res.cloudinary.com/dsdaneoq8/image/upload/v1620325405/domy/poolmain_uwzohf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      text-align: center;
+      position: relative;
+      top: 20vh;
+      background-color: #539701;
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+  .pool-middle {
+    min-height: 40vh;
+    p {
+      text-align: center;
+      margin-top: 5vh;
+    }
+  }
+}
+
 // 404
 // mobil
 .fourOhFour {
@@ -223,6 +260,7 @@ $primary-dark-grey: #323232;
         }
         h3 {
           margin: 1vh auto 2vh;
+          color: $primary-green;
         }
       }
     }
@@ -716,6 +754,14 @@ $primary-dark-grey: #323232;
     }
   }
 
+  // pool
+  // TABLET
+  .pool {
+    .pool-top {
+      height: 40vh;
+    }
+  }
+
   //gardens
   // TABLET
   .gardens {
@@ -875,6 +921,8 @@ $primary-dark-grey: #323232;
       }
     }
   }
+
+  // PC
   .home {
     overflow: hidden;
     .home-top {
@@ -930,6 +978,8 @@ $primary-dark-grey: #323232;
       }
     }
   }
+
+  // garden
   // PC
   .gardens {
     .gardens-slide {
@@ -963,6 +1013,14 @@ $primary-dark-grey: #323232;
           width: 100%;
         }
       }
+    }
+  }
+
+  // PC
+  .pool {
+    overflow: hidden;
+    .pool-top {
+      height: 75vh;
     }
   }
 }

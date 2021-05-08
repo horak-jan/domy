@@ -1,9 +1,11 @@
+import ErrorMessage from "../utils/ErrorMessage";
+import Loading from "../utils/Loading";
 import useDbData from "../utils/useDbData";
 import SingleImage from "./singleImage/SingleImage";
 
 const GardenInfo = () => {
   const [loadedData, isLoading, isError] = useDbData("image");
-
+  let { loadedData } = loadedData;
   return (
     <div className="garden-info">
       <h1>Zahrady</h1>
@@ -18,16 +20,13 @@ const GardenInfo = () => {
         Kompletní rekonstrukci starých zahrad, realizace zavlažovacích systémů,
         pokládku zámkové dlažby, stavby zídek a plotů.
       </p>
-
       {isError ? (
-        <p style={{ textAlign: "center", marginTop: "5vh" }}>
-          Někde se stala chyba
-        </p>
+        <ErrorMessage />
       ) : isLoading ? (
-        <p style={{ textAlign: "center", marginTop: "5vh" }}>Načítám</p>
+        <Loading />
       ) : (
         <div className="gallery">
-          {loadedData.image[0].imagesGarden.map((image) => (
+          {image.imagesGarden.map((image) => (
             <SingleImage src={image} key={image} />
           ))}
         </div>

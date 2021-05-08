@@ -3,7 +3,7 @@ import SingleImage from "./singleImage/SingleImage";
 
 const WoodInfo = () => {
   const [loadedData, isLoading, isError] = useDbData("image");
-
+  let { image } = loadedData;
   return (
     <div className="wood-info">
       <h1>Dřevěné prvky</h1>
@@ -24,7 +24,7 @@ const WoodInfo = () => {
         <p style={{ textAlign: "center", marginTop: "5vh" }}>Načítám</p>
       ) : (
         <div className="gallery">
-          {loadedData.image[0].imagesWood.map((image) => (
+          {image.imagesWood.map((image) => (
             <SingleImage src={image} key={image} />
           ))}
         </div>

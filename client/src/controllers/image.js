@@ -1,11 +1,11 @@
 const Image = require("../models/image");
 
 // GET api/image
-//  Returns all images
+//  Returns all images for woodwork and gardens
 
 exports.index = async (req, res) => {
   try {
-    const image = await Image.find();
+    const image = await Image.findOne();
 
     res.status(200).json({ image: image });
   } catch (error) {

@@ -1,6 +1,6 @@
 import React from "react";
-import HomeBottom from "../components/home/HomeBottom";
-import HomeMiddle from "../components/home/HomeMiddle";
+import HomeBottom from "../components/home/homeBottom/HomeBottom";
+import HomeMiddle from "../components/home/homeMiddle/HomeMiddle";
 import HomeTop from "../components/home/HomeTop";
 
 const Home = () => {

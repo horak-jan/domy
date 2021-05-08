@@ -1,5 +1,5 @@
+import Header from "../../utils/Header";
 import ButtonWrapper from "./ButtonWrapper";
-import Header from "./Header";
 import Paragraph from "./Paragraph";
 
 const GardensSlideContent = (props) => {

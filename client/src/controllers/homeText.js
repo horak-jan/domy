@@ -4,7 +4,7 @@ const HomeText = require("../models/homeText");
 
 exports.index = async (req, res) => {
   try {
-    const homeText = await HomeText.find();
+    const homeText = await HomeText.findOne();
 
     res.status(200).json({ homeText: homeText });
   } catch (error) {
