@@ -1,26 +1,24 @@
 import { useEffect, useState } from "react";
-import Axios from "axios";
 
-const useDbData = (dataToLoad) => {
+const useDbData = (whatToLoad) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
+  const [hasError, setHasError] = useState(false);
   const [loadedData, setLoadedData] = useState({});
 
   useEffect(() => {
-    const getDataToLoad = async () => {
-      try {
-        const res = await Axios.get(`/api/${dataToLoad}`);
-
-        setLoadedData(res.data);
-      } catch (error) {
-        setIsError(true);
-      }
-      setIsLoading(false);
-    };
-    getDataToLoad();
+    fetch(`/api/${whatToLoad}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setLoadedData(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setHasError(true);
+        setIsLoading(false);
+      });
   }, []);
 
-  return [loadedData, isLoading, isError];
+  return [loadedData, isLoading, hasError];
 };
 
 export default useDbData;
