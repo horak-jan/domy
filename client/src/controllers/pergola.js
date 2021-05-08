@@ -3,7 +3,7 @@ const Pergola = require("../models/pergola");
 // GET api/pergola
 //  Returns all pergolas
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const pergola = await Pergola.find();
 
@@ -16,7 +16,7 @@ exports.index = async function (req, res) {
 //  PUT api/pergola/{id}
 //  Update pergola
 
-exports.update = async function (req, res) {
+exports.update = async (req, res) => {
   try {
     const update = req.body;
     const id = req.params.id;
@@ -47,7 +47,7 @@ exports.update = async function (req, res) {
 //  GET api/pergola/:id
 //  get a single pergola
 
-exports.show = async function (req, res) {
+exports.show = async (req, res) => {
   try {
     const id = req.params.id;
 
@@ -80,7 +80,7 @@ exports.store = async (req, res) => {
 //  DESTROY api/pergola/{id}
 //  Delete pergola
 
-exports.destroy = async function (req, res) {
+exports.destroy = async (req, res) => {
   try {
     const id = req.params.id;
 

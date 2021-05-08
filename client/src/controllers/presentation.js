@@ -3,7 +3,7 @@ const Presentation = require("../models/presentation");
 // GET api/presentation
 //  Returns all
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const presentation = await Presentation.find();
 
@@ -33,7 +33,7 @@ exports.store = async (req, res) => {
 //  DESTROY api/presentation/{id}
 //  Delete Presentation
 
-exports.destroy = async function (req, res) {
+exports.destroy = async (req, res) => {
   try {
     const id = req.params.id;
 

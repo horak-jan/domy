@@ -3,7 +3,7 @@ const Image = require("../models/image");
 // GET api/image
 //  Returns all images
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const image = await Image.find();
 
@@ -16,7 +16,7 @@ exports.index = async function (req, res) {
 //  GET api/garden/:name
 //  get a single image array
 
-exports.show = async function (req, res) {
+exports.show = async (req, res) => {
   try {
     const name = req.params.name;
 

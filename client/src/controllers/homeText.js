@@ -2,7 +2,7 @@ const HomeText = require("../models/homeText");
 
 // GET api/hometext
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const homeText = await HomeText.find();
 

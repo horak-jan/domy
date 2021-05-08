@@ -2,7 +2,7 @@ const Contact = require("../models/contact");
 
 // GET api/contact
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const contact = await Contact.find();
 

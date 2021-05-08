@@ -2,7 +2,7 @@ const Address = require("../models/address");
 
 // GET api/address
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const address = await Address.find();
 

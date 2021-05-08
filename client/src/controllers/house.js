@@ -3,7 +3,7 @@ const House = require("../models/house");
 // GET api/house
 //  Returns all houses
 
-exports.index = async function (req, res) {
+exports.index = async (req, res) => {
   try {
     const house = await House.find();
 
@@ -16,7 +16,7 @@ exports.index = async function (req, res) {
 //  PUT api/house/{id}
 //  Update house
 
-exports.update = async function (req, res) {
+exports.update = async (req, res) => {
   try {
     const update = req.body;
     const id = req.params.id;
@@ -45,7 +45,7 @@ exports.update = async function (req, res) {
 //  GET api/house/:id
 //  get a single house
 
-exports.show = async function (req, res) {
+exports.show = async (req, res) => {
   try {
     const id = req.params.id;
 
@@ -78,7 +78,7 @@ exports.store = async (req, res) => {
 //  DESTROY api/house/{id}
 //  Delete house
 
-exports.destroy = async function (req, res) {
+exports.destroy = async (req, res) => {
   try {
     const id = req.params.id;
 
