@@ -10,6 +10,7 @@ const contact = require("./contact");
 const address = require("./address");
 const presentation = require("./presentation");
 const image = require("./image");
+const pool = require("./pool");
 
 module.exports = (app) => {
   app.get("/", (req, res) => {
@@ -25,4 +26,5 @@ module.exports = (app) => {
   app.use("/api/newsletter", newsletter);
   app.use("/api/presentation", presentation);
   app.use("/api/image", image);
+  app.use("/api/pool", pool);
 };

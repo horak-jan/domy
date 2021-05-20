@@ -1,37 +1,21 @@
-import PoolTypeInfo from "./PoolTypeInfo";
-import useDbData from "../utils/useDbData";
-import Loading from "../utils/Loading";
-import ErrorMessage from "../utils/ErrorMessage";
-import Header from "../utils/Header";
-import Image from "../utils/Image";
+import PoolType from "./PoolType";
+import ContactMiddle from "../contact/ContactMiddle";
 
-const PoolMiddle = () => {
-  const [loadedData, isLoading, hasError] = useDbData("pool");
-  let { pool } = loadedData;
-  console.log(garden);
+const PoolMiddle = (props) => {
 
-  let src =
-    "https://res.cloudinary.com/dsdaneoq8/image/upload/v1620348709/domy/pool1_gokdpw.jpg";
-  let header = "PLASTOVÉ BAZÉNY";
-  let infoImage =
-    "https://res.cloudinary.com/dsdaneoq8/image/upload/v1620348795/domy/pool2_uzw0wl.jpg";
-  let text =
-    "Bazény vhodné pro nadzemní i podzemní instalaci. Jsou cenově nejdostupnější, mají omezenou velikost a rychleji morálně zastarávají.";
   return (
     <div className="pool-middle">
-      <p>TYPY BAZÉNŮ V NAŠÍ NABÍDCE</p>
+      <h2>TYPY BAZÉNŮ V NAŠÍ NABÍDCE</h2>
 
-      {isLoading ? (
-        <Loading />
-      ) : hasError ? (
-        <ErrorMessage />
-      ) : (
-        <div className="pool-type">
-          <Image src={src} />
-          <Header header={header} />
-          <PoolTypeInfo src={infoImage} text={text} />
-        </div>
-      )}
+      {props.poolMiddle.map((pool) => (
+        <PoolType
+          key={pool.src}
+          src={pool.src}
+          header={pool.header}
+          text={pool.text}
+        />
+      ))}
+      <ContactMiddle />
     </div>
   );
 };

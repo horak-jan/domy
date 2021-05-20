@@ -1,13 +1,7 @@
-import Image from "../utils/Image";
 import PoolTypeInfoText from "./PoolTypeInfoText";
 
 const PoolTypeInfo = (props) => {
-  return (
-    <div className="pool-type-info">
-      <PoolTypeInfoText text={props.text} />
-      <Image src={props.src} />
-    </div>
-  );
+  return <p>{props.text}</p>;
 };
 
 export default PoolTypeInfo;
