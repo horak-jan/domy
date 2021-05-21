@@ -621,7 +621,8 @@ $primary-dark-grey: #323232;
 }
 
 .garden-info,
-.wood-info {
+.wood-info,
+.pergolas {
   min-height: 50vh;
   text-align: center;
   h1,
@@ -657,6 +658,44 @@ $primary-dark-grey: #323232;
       .gallery-opened-large-image {
         width: 100vw;
         height: 50vh;
+      }
+    }
+  }
+}
+
+// pergolas
+// MOBIL
+.pergolas {
+  width: 100vw;
+  max-width: 1200px;
+  text-align: center;
+  .pergola-type {
+    .main-image-part {
+      height: 30vh;
+      width: 100vw;
+      text-align: left;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      h1 {
+        position: relative;
+        top: -15vh;
+        color: white;
+        left: 10px;
+        background-color: black;
+        display: inline;
+      }
+    }
+    .pergola-type-content {
+      width: 100vw;
+      padding: 0 10px;
+      margin: 5vh auto;
+      h1 {
+        margin: 2vh auto 4vh;
+      }
+      p {
+        margin: 2vh auto;
       }
     }
   }
@@ -1016,7 +1055,8 @@ $primary-dark-grey: #323232;
 }
 
 .garden-info,
-.wood-info {
+.wood-info,
+.pergolas {
   h1,
   h2,
   p {
@@ -1033,11 +1073,26 @@ $primary-dark-grey: #323232;
     }
   }
 }
+
+// pergolas
+// TABLET
+.pergolas {
+  .pergola-type {
+    .main-image-part {
+      height: 40vh;
+      h1 {
+        left: 10vw;
+      }
+    }
+  }
+}
+
 // ==================PC===================
 
 @media (min-width: 1000px) {
   .garden-info,
-  .wood-info {
+  .wood-info,
+  .pergolas {
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -1059,6 +1114,17 @@ $primary-dark-grey: #323232;
     }
   }
 
+  // pergolas
+  // TABLET
+  .pergolas {
+    .pergola-type {
+      .main-image-part {
+        height: 75vh;
+      }
+    }
+  }
+
+  // home
   // PC
   .home {
     overflow: hidden;

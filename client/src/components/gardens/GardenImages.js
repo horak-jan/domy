@@ -1,4 +1,3 @@
-import Loading from "../utils/Loading";
 import SingleImage from "./singleImage/SingleImage";
 
 const GardenImages = (props) => {

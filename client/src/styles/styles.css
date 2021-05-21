@@ -677,7 +677,8 @@
 }
 
 .garden-info,
-.wood-info {
+.wood-info,
+.pergolas {
   min-height: 50vh;
   text-align: center;
 }
@@ -685,19 +686,23 @@
 .garden-info h1,
 .garden-info h2,
 .wood-info h1,
-.wood-info h2 {
+.wood-info h2,
+.pergolas h1,
+.pergolas h2 {
   margin: 5vh auto 0;
   max-width: 350px;
 }
 
 .garden-info p,
-.wood-info p {
+.wood-info p,
+.pergolas p {
   margin: 3vh auto 5vh;
   max-width: 350px;
 }
 
 .garden-info .gallery,
-.wood-info .gallery {
+.wood-info .gallery,
+.pergolas .gallery {
   min-height: 90vh;
   width: 100vw;
   text-align: center;
@@ -705,14 +710,16 @@
 }
 
 .garden-info .gallery .thumbnail,
-.wood-info .gallery .thumbnail {
+.wood-info .gallery .thumbnail,
+.pergolas .gallery .thumbnail {
   width: 90vw;
   height: 30vh;
   margin: 0 auto;
 }
 
 .garden-info .gallery .gallery-large-image,
-.wood-info .gallery .gallery-large-image {
+.wood-info .gallery .gallery-large-image,
+.pergolas .gallery .gallery-large-image {
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
   position: fixed;
@@ -723,9 +730,50 @@
 }
 
 .garden-info .gallery .gallery-large-image .gallery-opened-large-image,
-.wood-info .gallery .gallery-large-image .gallery-opened-large-image {
+.wood-info .gallery .gallery-large-image .gallery-opened-large-image,
+.pergolas .gallery .gallery-large-image .gallery-opened-large-image {
   width: 100vw;
   height: 50vh;
+}
+
+.pergolas {
+  width: 100vw;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.pergolas .pergola-type .main-image-part {
+  height: 30vh;
+  width: 100vw;
+  text-align: left;
+}
+
+.pergolas .pergola-type .main-image-part img {
+  height: 100%;
+  width: 100%;
+}
+
+.pergolas .pergola-type .main-image-part h1 {
+  position: relative;
+  top: -15vh;
+  color: white;
+  left: 10px;
+  background-color: black;
+  display: inline;
+}
+
+.pergolas .pergola-type .pergola-type-content {
+  width: 100vw;
+  padding: 0 10px;
+  margin: 5vh auto;
+}
+
+.pergolas .pergola-type .pergola-type-content h1 {
+  margin: 2vh auto 4vh;
+}
+
+.pergolas .pergola-type .pergola-type-content p {
+  margin: 2vh auto;
 }
 
 .footer {
@@ -1080,12 +1128,16 @@
 .garden-info p,
 .wood-info h1,
 .wood-info h2,
-.wood-info p {
+.wood-info p,
+.pergolas h1,
+.pergolas h2,
+.pergolas p {
   max-width: 700px;
 }
 
 .garden-info .gallery,
-.wood-info .gallery {
+.wood-info .gallery,
+.pergolas .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,18 +1146,29 @@
 }
 
 .garden-info .gallery .thumbnail,
-.wood-info .gallery .thumbnail {
+.wood-info .gallery .thumbnail,
+.pergolas .gallery .thumbnail {
   width: 50vw;
 }
 
 .garden-info .gallery .gallery-opened-large-image,
-.wood-info .gallery .gallery-opened-large-image {
+.wood-info .gallery .gallery-opened-large-image,
+.pergolas .gallery .gallery-opened-large-image {
   height: 55vh;
+}
+
+.pergolas .pergola-type .main-image-part {
+  height: 40vh;
+}
+
+.pergolas .pergola-type .main-image-part h1 {
+  left: 10vw;
 }
 
 @media (min-width: 1000px) {
   .garden-info .gallery,
-  .wood-info .gallery {
+  .wood-info .gallery,
+  .pergolas .gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1113,11 +1176,13 @@
         flex-wrap: wrap;
   }
   .garden-info .gallery .thumbnail,
-  .wood-info .gallery .thumbnail {
+  .wood-info .gallery .thumbnail,
+  .pergolas .gallery .thumbnail {
     width: 25vw;
   }
   .garden-info .gallery .gallery-large-image,
-  .wood-info .gallery .gallery-large-image {
+  .wood-info .gallery .gallery-large-image,
+  .pergolas .gallery .gallery-large-image {
     height: 90vh;
     z-index: 10;
     width: 80vw;
@@ -1125,9 +1190,13 @@
     left: 10vw;
   }
   .garden-info .gallery .gallery-large-image .gallery-opened-large-image,
-  .wood-info .gallery .gallery-large-image .gallery-opened-large-image {
+  .wood-info .gallery .gallery-large-image .gallery-opened-large-image,
+  .pergolas .gallery .gallery-large-image .gallery-opened-large-image {
     height: 100%;
     width: 100%;
+  }
+  .pergolas .pergola-type .main-image-part {
+    height: 75vh;
   }
   .home {
     overflow: hidden;
