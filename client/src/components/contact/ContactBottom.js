@@ -1,8 +1,8 @@
 import ContactBottomInfo from "./ContactBottomInfo";
 import ContactBottomMap from "./ContactBottomMap";
 import Loading from "../utils/Loading";
-import ErrorMessage from "../utils/ErrorMessage";
 import useDbData from "../utils/useDbData";
+import ShowErrorMessage from "../utils/ShowErrorMessage";
 
 const ContactBottom = () => {
   const [loadedData, isLoading, hasError] = useDbData("address");
@@ -12,7 +12,7 @@ const ContactBottom = () => {
   return (
     <div className="contact-bottom">
       {hasError ? (
-        <ErrorMessage />
+        <ShowErrorMessage />
       ) : isLoading ? (
         <Loading />
       ) : (

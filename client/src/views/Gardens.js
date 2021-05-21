@@ -1,6 +1,6 @@
 import GardenImages from "../components/gardens/GardenImages";
 import GardenSlide from "../components/gardens/gardenSlide/GardenSlide";
-import ErrorMessage from "../components/utils/ErrorMessage";
+import ShowErrorMessage from "../components/utils/ShowErrorMessage";
 import Loading from "../components/utils/Loading";
 import useDbData from "../components/utils/useDbData";
 
@@ -16,7 +16,7 @@ const Gardens = () => {
         Přestaňte o své zahradě jen snít! Vaše představy díky nám dostanou tvar.
       </p>
       {hasError ? (
-        <ErrorMessage />
+        <ShowErrorMessage />
       ) : isLoading ? (
         <Loading />
       ) : (

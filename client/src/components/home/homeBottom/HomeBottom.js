@@ -2,7 +2,7 @@ import HomeBottomLast from "./HomeBottomLast";
 import HomeBottomTextParagraph from "./HomeBottomTextParagraph";
 import Loading from "../../utils/Loading";
 import useDbData from "../../utils/useDbData";
-import ErrorMessage from "../../utils/ErrorMessage";
+import ShowErrorMessage from "../../utils/ShowErrorMessage";
 
 const HomeBottom = () => {
   const [loadedData, isLoading, hasError] = useDbData("hometext");
@@ -18,7 +18,7 @@ const HomeBottom = () => {
         </h2>
 
         {hasError ? (
-          <ErrorMessage />
+          <ShowErrorMessage />
         ) : isLoading ? (
           <Loading />
         ) : (

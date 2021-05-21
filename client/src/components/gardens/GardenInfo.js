@@ -1,11 +1,11 @@
-import ErrorMessage from "../utils/ErrorMessage";
+import ShowErrorMessage from "../utils/ShowErrorMessage";
 import Loading from "../utils/Loading";
 import useDbData from "../utils/useDbData";
 import SingleImage from "./singleImage/SingleImage";
 
 const GardenInfo = () => {
   const [loadedData, isLoading, isError] = useDbData("image");
-  let { loadedData } = loadedData;
+  let { image } = loadedData;
   return (
     <div className="garden-info">
       <h1>Zahrady</h1>
@@ -21,7 +21,7 @@ const GardenInfo = () => {
         pokládku zámkové dlažby, stavby zídek a plotů.
       </p>
       {isError ? (
-        <ErrorMessage />
+        <ShowErrorMessage />
       ) : isLoading ? (
         <Loading />
       ) : (

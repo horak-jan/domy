@@ -109,15 +109,135 @@
   background-color: #539701;
   font-size: 22px;
   font-weight: 700;
+  display: none;
 }
 
 .pool .pool-middle {
+  max-width: 800px;
   min-height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.pool .pool-middle p {
+.pool .pool-middle h2 {
+  margin: 5vh auto;
+  width: 100%;
   text-align: center;
-  margin-top: 5vh;
+}
+
+.pool .pool-middle .pool-type {
+  width: 90vw;
+  height: 60vh;
+  overflow: hidden;
+  max-width: 380px;
+  margin: 0vh auto 5vh;
+}
+
+.pool .pool-middle .pool-type img {
+  height: 100%;
+  width: 100%;
+}
+
+.pool .pool-middle .pool-type h1 {
+  font-size: 35px;
+  position: relative;
+  top: -55vh;
+  width: 100%;
+  background-color: #1c1c1c;
+  color: #bcbcbc;
+  height: 50px;
+  padding-top: 10px;
+  max-width: 380px;
+  text-align: center;
+}
+
+.pool .pool-middle .pool-type p {
+  height: 14vh;
+  position: relative;
+  top: -28vh;
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 700;
+  background-color: rgba(28, 28, 28, 0.6);
+  max-width: 380px;
+  padding: 10px;
+}
+
+.pool .pool-middle .contact-middle {
+  max-width: 1200px;
+  margin: 3vh auto;
+  padding: 10px;
+}
+
+.pool .pool-middle .contact-middle h3 {
+  text-align: center;
+}
+
+.pool .pool-middle .contact-middle .contact-form {
+  margin: 5vh auto;
+  text-align: center;
+}
+
+.pool .pool-middle .contact-middle .contact-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.pool .pool-middle .contact-middle input {
+  height: 35px;
+  font-size: 20px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: #bcbcbc 1px solid;
+}
+
+.pool .pool-middle .contact-middle .form-error {
+  color: #e1251b;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pool .pool-middle .contact-middle button {
+  margin: 3vh auto;
+  color: white;
+  background-color: #539701;
+  font-size: 15px;
+  width: 200px;
+  display: block;
+  height: 40px;
+}
+
+.pool .pool-bottom {
+  min-height: 40vh;
+  width: 100vw;
+  margin: 0 auto 5vh;
+  max-width: 1200px;
+}
+
+.pool .pool-bottom .award {
+  width: 90vw;
+  max-width: 600px;
+  margin: 5vh auto;
+}
+
+.pool .pool-bottom .award img {
+  width: 100%;
+}
+
+.pool .pool-bottom .award h1 {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.pool .pool-bottom .award h3,
+.pool .pool-bottom .award p {
+  margin-top: 2vh;
+  text-align: justify;
 }
 
 .fourOhFour {
@@ -651,6 +771,10 @@
   color: #bcbcbc;
 }
 
+.footer .footer-form label a:visited {
+  color: #bcbcbc;
+}
+
 .footer .footer-form input {
   height: 35px;
   background-color: #323232;
@@ -809,6 +933,36 @@
   }
   .pool .pool-top {
     height: 40vh;
+  }
+  .pool .pool-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .pool .pool-middle .contact-middle h3 {
+    font-size: 22px;
+  }
+  .pool .pool-middle .contact-middle input {
+    width: 350px;
+  }
+  .pool .pool-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1200px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .pool .pool-bottom .award {
+    max-width: 400px;
+    margin: 5vh auto;
   }
   .gardens .gardens-slide {
     height: 60vh;

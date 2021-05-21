@@ -1,4 +1,4 @@
-const ErrorMessage = () => {
+const ShowErrorMessage = () => {
   return (
     <p className="loading-or-error">
       Někde se stala chyba, načtěte znovu stránku
@@ -6,4 +6,4 @@ const ErrorMessage = () => {
   );
 };
 
-export default ErrorMessage;
+export default ShowErrorMessage;

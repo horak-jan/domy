@@ -1,3 +1,5 @@
+import Loading from "../utils/Loading";
+import ShowErrorMessage from "../utils/ShowErrorMessage";
 import useDbData from "../utils/useDbData";
 import SingleImage from "./singleImage/SingleImage";
 
@@ -17,11 +19,9 @@ const WoodInfo = () => {
       </p>
 
       {isError ? (
-        <p style={{ textAlign: "center", marginTop: "5vh" }}>
-          Někde se stala chyba
-        </p>
+        <ShowErrorMessage />
       ) : isLoading ? (
-        <p style={{ textAlign: "center", marginTop: "5vh" }}>Načítám</p>
+        <Loading />
       ) : (
         <div className="gallery">
           {image.imagesWood.map((image) => (
