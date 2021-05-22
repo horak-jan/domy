@@ -703,7 +703,6 @@
 .garden-info .gallery,
 .wood-info .gallery,
 .pergolas .gallery {
-  min-height: 90vh;
   width: 100vw;
   text-align: center;
   margin: 5vh auto 4vh;
@@ -742,6 +741,10 @@
   text-align: center;
 }
 
+.pergolas .pergola-type {
+  margin-bottom: 5vh;
+}
+
 .pergolas .pergola-type .main-image-part {
   height: 30vh;
   width: 100vw;
@@ -763,8 +766,7 @@
 }
 
 .pergolas .pergola-type .pergola-type-content {
-  width: 100vw;
-  padding: 0 10px;
+  width: 90vw;
   margin: 5vh auto;
 }
 
@@ -773,7 +775,7 @@
 }
 
 .pergolas .pergola-type .pergola-type-content p {
-  margin: 2vh auto;
+  margin: 5vh auto;
 }
 
 .footer {

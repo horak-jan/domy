@@ -637,7 +637,6 @@ $primary-dark-grey: #323232;
 
   // MOBIL
   .gallery {
-    min-height: 90vh;
     width: 100vw;
     text-align: center;
     margin: 5vh auto 4vh;
@@ -670,6 +669,7 @@ $primary-dark-grey: #323232;
   max-width: 1200px;
   text-align: center;
   .pergola-type {
+    margin-bottom: 5vh;
     .main-image-part {
       height: 30vh;
       width: 100vw;
@@ -688,14 +688,13 @@ $primary-dark-grey: #323232;
       }
     }
     .pergola-type-content {
-      width: 100vw;
-      padding: 0 10px;
+      width: 90vw;
       margin: 5vh auto;
       h1 {
         margin: 2vh auto 4vh;
       }
       p {
-        margin: 2vh auto;
+        margin: 5vh auto;
       }
     }
   }
