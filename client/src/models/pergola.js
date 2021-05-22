@@ -1,28 +1,28 @@
 const mongoose = require("mongoose");
 
-const PergolaSchema = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-
-    sqMetres: {
-      type: Number,
-      required: true,
-    },
-
-    description: {
-      type: String,
-      required: true,
-    },
-    price: [
-      {
-        type: Number,
-      },
-    ],
+const PergolaSchema = new mongoose.Schema({
+  header: {
+    type: String,
+    required: true,
   },
-  { timestamps: true }
-);
+
+  paragraphs: [
+    {
+      type: String,
+      required: true,
+    },
+  ],
+
+  mainImage: {
+    type: String,
+    required: true,
+  },
+  images: [
+    {
+      type: String,
+      required: true,
+    },
+  ],
+});
 
 module.exports = mongoose.model("Pergola", PergolaSchema);
