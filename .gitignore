@@ -2,4 +2,5 @@ client/src/.env
 public/
 client/src/images/
 client/src/house1.json
+client/src/basicHouseInfo.json
 node_modules

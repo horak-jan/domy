@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-const Pagination = (props) => {
+const Pagination = (amountOfAllHouses, perPage) => {
   const [actualPage, setActualPage] = useState(1);
-  const perPage = 2;
-  const lastCar = actualPage * perPage;
-  const firstCar = lastCar - perPage;
-  const totalPages = Math.ceil(props / perPage);
+  const lastHouseActualPage = actualPage * perPage;
+  const firstHouseActualPage = lastHouseActualPage - perPage;
+  const totalPages = Math.ceil(amountOfAllHouses / perPage);
 
-  return [firstCar, lastCar, totalPages, setActualPage];
+  return [firstHouseActualPage, lastHouseActualPage, totalPages, setActualPage];
 };
 
 export default Pagination;

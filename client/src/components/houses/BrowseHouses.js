@@ -1,9 +1,12 @@
 import SingleBrowseHouse from "./SingleBrowseHouse";
 
 const BrowseHouses = (props) => {
+  const { allHouses } = props;
   return (
     <div className="browse-houses">
-      <SingleBrowseHouse house={props.house} />
+      {allHouses.map((house) => (
+        <SingleBrowseHouse key={house.name} house={house} />
+      ))}
     </div>
   );
 };
