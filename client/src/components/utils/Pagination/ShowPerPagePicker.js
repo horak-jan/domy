@@ -1,10 +1,10 @@
 import PerPageNumber from "./PerPageNumber";
 
-const ShowPerPage = (props) => {
+const ShowPerPagePicker = (props) => {
   const { setPerPage } = props;
   const perPageOptions = [6, 9, 12];
   return (
-    <p className="show-per-page">
+    <p className="show-per-page-picker">
       Počet zobrazených domů
       {perPageOptions.map((number) => (
         <PerPageNumber key={number} number={number} setPerPage={setPerPage} />
@@ -13,4 +13,4 @@ const ShowPerPage = (props) => {
   );
 };
 
-export default ShowPerPage;
+export default ShowPerPagePicker;
