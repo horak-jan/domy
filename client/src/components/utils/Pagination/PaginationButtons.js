@@ -3,6 +3,12 @@ const PaginationButtons = (props) => {
   for (let i = 1; i <= props.totalPages; i++) {
     totalPagesInArray.push(i);
   }
+
+  // if there's only one page to show set it as actual
+  if (totalPagesInArray.length === 1) {
+    props.setActualPage(1);
+  }
+
   return (
     <div className="pagination-buttons">
       {totalPagesInArray.map((pageNumber) => (
