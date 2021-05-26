@@ -785,16 +785,15 @@
 
 .houses h1 {
   font-size: 28px;
-}
-
-.houses .filter-and-sort {
-  width: 100%;
-  background-color: #efefef;
+  margin: 5vh auto;
+  max-width: 90vw;
   text-align: center;
 }
 
-.houses .filter-and-sort .filter {
-  margin-bottom: 2vh;
+.houses .filter-and-sort {
+  width: 100vw;
+  background-color: #efefef;
+  text-align: center;
 }
 
 .houses .filter-and-sort .filter h3 {
@@ -816,12 +815,18 @@
   top: 3px;
 }
 
+.houses .filter-and-sort .sort {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 .houses .filter-and-sort .sort h3 {
   padding-bottom: 2vh;
   font-size: 20px;
 }
 
-.houses .filter-and-sort .sort .sort-button-button {
+.houses .filter-and-sort .sort .sort-button {
   margin-right: 5px;
   font-size: 17px;
   border-radius: 5px;
@@ -840,8 +845,21 @@
 .houses .show-per-page-picker {
   position: relative;
   top: 5px;
-  left: 25vw;
+  left: 30vw;
   display: inline;
+  font-size: 18px;
+}
+
+.houses .show-per-page-picker span {
+  margin-left: 5px;
+}
+
+.houses .show-per-page-picker span.picked {
+  margin-left: 5px;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 650;
+  color: #539701;
 }
 
 .houses .browse-wrapper .browse-houses {
@@ -855,12 +873,11 @@
 
 .houses .browse-wrapper .browse-houses .single-browse-house h2 {
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .houses .browse-wrapper .browse-houses .single-browse-house img {
   width: 90vw;
-  margin-bottom: 5vh;
 }
 
 .houses .browse-wrapper .browse-houses .single-browse-house p {
@@ -1264,6 +1281,19 @@
 
 .pergolas .pergola-type .main-image-part h1 {
   left: 10vw;
+}
+
+.houses .filter-and-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.houses .show-per-page-picker {
+  left: 62vw;
 }
 
 @media (min-width: 1000px) {

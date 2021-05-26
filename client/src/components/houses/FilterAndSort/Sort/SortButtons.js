@@ -3,6 +3,11 @@ const SortButtons = (props) => {
     <div className="sort-buttons">
       <h3>Seřadit:</h3>
       <button
+        className={
+          props.sortDirection == "lowToHigh"
+            ? "active-sort-button"
+            : "sort-button"
+        }
         onClick={() => {
           props.setSortDirection("lowToHigh");
         }}
@@ -10,6 +15,11 @@ const SortButtons = (props) => {
         Od nejnižší ceny
       </button>
       <button
+        className={
+          props.sortDirection == "lowToHigh"
+            ? "sort-button"
+            : "active-sort-button"
+        }
         onClick={() => {
           props.setSortDirection("highToLow");
         }}

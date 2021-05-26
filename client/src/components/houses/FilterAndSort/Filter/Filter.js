@@ -17,7 +17,8 @@ const Filter = (props) => {
   };
   return (
     <div className="filter">
-      Disppozice domu:
+      <h3>Dispozice domu:</h3>
+
       {numberOfRoomsInHouse.map((numberOfRooms) => (
         <span key={numberOfRooms}>
           {numberOfRooms}

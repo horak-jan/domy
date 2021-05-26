@@ -3,7 +3,10 @@ import SortButtons from "./SortButtons";
 const Sort = (props) => {
   return (
     <div className="sort">
-      <SortButtons setSortDirection={props.setSortDirection} />
+      <SortButtons
+        sortDirection={props.sortDirection}
+        setSortDirection={props.setSortDirection}
+      />
     </div>
   );
 };
