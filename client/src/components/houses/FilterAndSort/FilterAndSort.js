@@ -1,5 +1,5 @@
-import Filter from "./Filter";
-import Sort from "./Sort";
+import Filter from "./Filter/Filter";
+import Sort from "./Sort/Sort";
 
 const FilterAndSort = (props) => {
   return (
@@ -8,7 +8,10 @@ const FilterAndSort = (props) => {
         activeFilters={props.activeFilters}
         setActiveFilters={props.setActiveFilters}
       />
-      <Sort />
+      <Sort
+        sortDirection={props.sortDirection}
+        setSortDirection={props.setSortDirection}
+      />
     </div>
   );
 };
