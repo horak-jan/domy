@@ -789,55 +789,91 @@
 
 .houses .filter-and-sort {
   width: 100%;
-  height: 10vh;
-  background-color: #c6fdff;
+  background-color: #efefef;
+  text-align: center;
 }
 
 .houses .filter-and-sort .filter {
-  margin-right: 5px;
+  margin-bottom: 2vh;
 }
 
-.houses .filter-and-sort .sort button {
-  margin-right: 5px;
+.houses .filter-and-sort .filter h3 {
+  margin-bottom: 2vh;
+  padding-top: 2vh;
+  font-size: 20px;
 }
 
-.houses .show-per-page {
+.houses .filter-and-sort .filter span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.houses .filter-and-sort .filter span input {
+  height: 18px;
+  width: 18px;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+}
+
+.houses .filter-and-sort .sort h3 {
+  padding-bottom: 2vh;
+  font-size: 20px;
+}
+
+.houses .filter-and-sort .sort .sort-button-button {
+  margin-right: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.houses .filter-and-sort .sort .active-sort-button {
+  color: white;
+  background-color: #539701;
+  margin-right: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.houses .show-per-page-picker {
   position: relative;
   top: 5px;
   left: 25vw;
   display: inline;
 }
 
-.houses .browse-houses {
+.houses .browse-wrapper .browse-houses {
   margin: 5vh auto;
 }
 
-.houses .browse-houses .single-browse-house {
+.houses .browse-wrapper .browse-houses .single-browse-house {
   margin: 0 auto;
   width: 90vw;
 }
 
-.houses .browse-houses .single-browse-house h2 {
+.houses .browse-wrapper .browse-houses .single-browse-house h2 {
   text-align: center;
   margin-bottom: 5vh;
 }
 
-.houses .browse-houses .single-browse-house img {
+.houses .browse-wrapper .browse-houses .single-browse-house img {
   width: 90vw;
   margin-bottom: 5vh;
 }
 
-.houses .browse-houses .single-browse-house p {
+.houses .browse-wrapper .browse-houses .single-browse-house p {
   margin-top: 2vh;
 }
 
-.houses .browse-houses .single-browse-house .browse-prices {
+.houses .browse-wrapper .browse-houses .single-browse-house .browse-prices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.houses .browse-houses .single-browse-house .browse-prices h3 {
+.houses .browse-wrapper .browse-houses .single-browse-house .browse-prices h3 {
   font-size: 22px;
 }
 
