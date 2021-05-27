@@ -823,7 +823,6 @@
 
 .houses {
   width: 100vw;
-  max-width: 1200px;
 }
 
 .houses h1 {
@@ -910,7 +909,7 @@
 }
 
 .houses .browse-wrapper .browse-houses .single-browse-house {
-  margin: 0 auto;
+  margin: 0 auto 5vh;
   width: 90vw;
 }
 
@@ -919,22 +918,53 @@
   margin-bottom: 2vh;
 }
 
-.houses .browse-wrapper .browse-houses .single-browse-house img {
+.houses .browse-wrapper .browse-houses .single-browse-house .main-house-image {
   width: 90vw;
 }
 
-.houses .browse-wrapper .browse-houses .single-browse-house p {
-  margin-top: 2vh;
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details {
+  border: 1px solid #bcbcbc;
+  border-top: none;
+  padding: 10px;
 }
 
-.houses .browse-wrapper .browse-houses .single-browse-house .browse-prices {
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .rooms-and-bills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.houses .browse-wrapper .browse-houses .single-browse-house .browse-prices h3 {
-  font-size: 22px;
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .rooms-and-bills div h4 {
+  margin-bottom: 10px;
+}
+
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .rooms-and-bills div img {
+  width: 30px;
+}
+
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .rooms-and-bills div p {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  margin-bottom: 2vh;
+}
+
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .browse-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .browse-prices h4 {
+  margin-bottom: 10px;
+}
+
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .browse-prices p {
+  margin-bottom: 2vh;
 }
 
 .footer {
@@ -1285,61 +1315,70 @@
     margin: 0 auto;
     max-width: 500px;
   }
-}
-
-.garden-info h1,
-.garden-info h2,
-.garden-info p,
-.wood-info h1,
-.wood-info h2,
-.wood-info p,
-.pergolas h1,
-.pergolas h2,
-.pergolas p {
-  max-width: 700px;
-}
-
-.garden-info .gallery,
-.wood-info .gallery,
-.pergolas .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.garden-info .gallery .thumbnail,
-.wood-info .gallery .thumbnail,
-.pergolas .gallery .thumbnail {
-  width: 50vw;
-}
-
-.garden-info .gallery .gallery-opened-large-image,
-.wood-info .gallery .gallery-opened-large-image,
-.pergolas .gallery .gallery-opened-large-image {
-  height: 55vh;
-}
-
-.pergolas .pergola-type .main-image-part {
-  height: 40vh;
-}
-
-.pergolas .pergola-type .main-image-part h1 {
-  left: 10vw;
-}
-
-.houses .filter-and-sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.houses .show-per-page-picker {
-  left: 62vw;
+  .houses .filter-and-sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .houses .show-per-page-picker {
+    left: 62vw;
+  }
+  .houses .browse-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .houses .browse-wrapper .browse-houses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .houses .browse-wrapper .browse-houses .single-browse-house {
+    width: 380px;
+  }
+  .houses .browse-wrapper .browse-houses .single-browse-house .main-house-image {
+    width: 380px;
+  }
+  .pergolas .pergola-type .main-image-part {
+    height: 40vh;
+  }
+  .pergolas .pergola-type .main-image-part h1 {
+    left: 10vw;
+  }
+  .garden-info h1,
+  .garden-info h2,
+  .garden-info p,
+  .wood-info h1,
+  .wood-info h2,
+  .wood-info p,
+  .pergolas h1,
+  .pergolas h2,
+  .pergolas p {
+    max-width: 700px;
+  }
+  .garden-info .gallery,
+  .wood-info .gallery,
+  .pergolas .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .garden-info .gallery .thumbnail,
+  .wood-info .gallery .thumbnail,
+  .pergolas .gallery .thumbnail {
+    width: 50vw;
+  }
+  .garden-info .gallery .gallery-opened-large-image,
+  .wood-info .gallery .gallery-opened-large-image,
+  .pergolas .gallery .gallery-opened-large-image {
+    height: 55vh;
+  }
 }
 
 @media (min-width: 1000px) {

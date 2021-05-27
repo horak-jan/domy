@@ -19,7 +19,7 @@ const Houses = () => {
 
   return (
     <div className="houses">
-      <h1>Katalog nízkoenergetických zděných domů a dřevostaveb na klíč</h1>
+      <h1>Katalog nízkoenergetických domů na klíč</h1>
       <FilterAndSort
         setSortDirection={setSortDirection}
         sortDirection={sortDirection}

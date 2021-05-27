@@ -1,15 +1,15 @@
-import BrowsePrices from "./BrowsePrices";
+import SingleBrowseHouseDetails from "./SingleBrowseHouseDetails";
 
 const SingleBrowseHouse = (props) => {
   const { house } = props;
   return (
     <div className="single-browse-house">
       <h2>{house.name}</h2>
-      <img alt="single house" src={house.image} />
-      <p>Dispozice domu: {house.rooms}</p>
-      <p>Provozní náklady: {house.bills}</p>
+      <img alt="single house" className="main-house-image" src={house.image} />
 
-      <BrowsePrices
+      <SingleBrowseHouseDetails
+        rooms={house.rooms}
+        bills={house.bills}
         fullHousePrices={house.fullHousePrices}
         basicHousePrices={house.basicHousePrices}
       />

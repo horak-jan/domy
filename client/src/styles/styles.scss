@@ -732,7 +732,6 @@ $primary-dark-grey: #323232;
 // MOBIL
 .houses {
   width: 100vw;
-  max-width: 1200px;
   h1 {
     font-size: 28px;
     margin: 5vh auto;
@@ -808,22 +807,50 @@ $primary-dark-grey: #323232;
     .browse-houses {
       margin: 5vh auto;
       .single-browse-house {
-        margin: 0 auto;
+        margin: 0 auto 5vh;
         width: 90vw;
         h2 {
           text-align: center;
           margin-bottom: 2vh;
         }
-        img {
+        .main-house-image {
           width: 90vw;
         }
-        p {
-          margin-top: 2vh;
-        }
-        .browse-prices {
-          display: flex;
-          h3 {
-            font-size: 22px;
+
+        .single-browse-house-details {
+          border: 1px solid $footer-grey;
+          border-top: none;
+          padding: 10px;
+
+          .rooms-and-bills {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+              h4 {
+                margin-bottom: 10px;
+              }
+              img {
+                width: 30px;
+              }
+              p {
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                margin-bottom: 2vh;
+              }
+            }
+          }
+          .browse-prices {
+            display: flex;
+            justify-content: space-around;
+            h4 {
+              margin-bottom: 10px;
+            }
+
+            p {
+              margin-bottom: 2vh;
+            }
           }
         }
       }
@@ -1188,50 +1215,63 @@ $primary-dark-grey: #323232;
       }
     }
   }
-}
-
-.garden-info,
-.wood-info,
-.pergolas {
-  h1,
-  h2,
-  p {
-    max-width: 700px;
-  }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    .thumbnail {
-      width: 50vw;
+  // houses
+  // TABLET
+  .houses {
+    .filter-and-sort {
+      display: flex;
+      justify-content: space-evenly;
     }
-    .gallery-opened-large-image {
-      height: 55vh;
+    .show-per-page-picker {
+      left: 62vw;
     }
-  }
-}
+    .browse-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      .browse-houses {
+        display: flex;
+        flex-wrap: wrap;
+        .single-browse-house {
+          width: 380px;
 
-// pergolas
-// TABLET
-.pergolas {
-  .pergola-type {
-    .main-image-part {
-      height: 40vh;
-      h1 {
-        left: 10vw;
+          .main-house-image {
+            width: 380px;
+          }
+        }
       }
     }
   }
-}
 
-// houses
-// TABLET
-.houses {
-  .filter-and-sort {
-    display: flex;
-    justify-content: space-evenly;
+  // pergolas
+  // TABLET
+  .pergolas {
+    .pergola-type {
+      .main-image-part {
+        height: 40vh;
+        h1 {
+          left: 10vw;
+        }
+      }
+    }
   }
-  .show-per-page-picker {
-    left: 62vw;
+  .garden-info,
+  .wood-info,
+  .pergolas {
+    h1,
+    h2,
+    p {
+      max-width: 700px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      .thumbnail {
+        width: 50vw;
+      }
+      .gallery-opened-large-image {
+        height: 55vh;
+      }
+    }
   }
 }
 

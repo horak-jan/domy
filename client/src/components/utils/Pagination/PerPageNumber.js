@@ -1,6 +1,5 @@
 const PerPageNumber = (props) => {
   const { number, perPage, setPerPage } = props;
-  console.log(number, perPage);
   return (
     <span
       className={perPage === number ? "picked" : "not-picked"}
