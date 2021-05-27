@@ -83,11 +83,6 @@
   display: none;
 }
 
-.loading-or-error {
-  text-align: center;
-  margin-top: 5vh;
-}
-
 .pool {
   min-height: 50vh;
   width: 100vw;
@@ -647,6 +642,54 @@
   text-align: justify;
 }
 
+.error-message {
+  margin: 5vh auto;
+  height: 20vh;
+  color: #850808;
+}
+
+.loading-wrapper {
+  width: 100vw;
+  height: 30vh;
+}
+
+.loading-wrapper:after {
+  content: "";
+  border: 14px solid #bcbcbc;
+  border-radius: 50%;
+  border-top: 14px solid #539701;
+  width: 70px !important;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  display: block;
+  position: absolute !important;
+  left: 40vw;
+  margin-top: 5vh;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .terms {
   padding: 5vh 5vw;
 }
@@ -1152,6 +1195,9 @@
   }
   .gardens .garden-images .gallery-opened-large-image {
     height: 55vh;
+  }
+  .loading-wrapper:after {
+    left: 45vw;
   }
   .navbar .burger {
     display: none;

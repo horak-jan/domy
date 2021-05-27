@@ -1,5 +1,5 @@
 const Loading = () => {
-  return <p className="loading-or-error">Načítám</p>;
+  return <div className="loading-wrapper"></div>;
 };
 
 export default Loading;

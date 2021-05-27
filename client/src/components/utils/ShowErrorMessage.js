@@ -1,8 +1,6 @@
 const ShowErrorMessage = () => {
   return (
-    <p className="loading-or-error">
-      Někde se stala chyba, načtěte znovu stránku
-    </p>
+    <p className="error-message">Někde se stala chyba, načtěte znovu stránku</p>
   );
 };
 

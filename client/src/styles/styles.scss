@@ -78,12 +78,6 @@ $primary-dark-grey: #323232;
   }
 }
 
-// loading and error messages
-// MOBIL
-.loading-or-error {
-  text-align: center;
-  margin-top: 5vh;
-}
 // pool
 // MOBIL
 .pool {
@@ -590,6 +584,40 @@ $primary-dark-grey: #323232;
   }
 }
 
+// loading  error messages
+// MOBIL
+.error-message {
+  margin: 5vh auto;
+  height: 20vh;
+  color: rgb(133, 8, 8);
+}
+.loading-wrapper {
+  width: 100vw;
+  height: 30vh;
+}
+.loading-wrapper:after {
+  content: "";
+  border: 14px solid $footer-grey;
+  border-radius: 50%;
+  border-top: 14px solid $primary-green;
+  width: 70px !important;
+  height: 70px;
+  animation: spin 2s linear infinite;
+  display: block;
+  position: absolute !important;
+  left: 40vw;
+  margin-top: 5vh;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 // terms and conditions
 // MOBIL
 .terms {
@@ -1063,6 +1091,12 @@ $primary-dark-grey: #323232;
         height: 55vh;
       }
     }
+  }
+
+  //loading
+  // TABLET
+  .loading-wrapper:after {
+    left: 45vw;
   }
 
   //navbar
