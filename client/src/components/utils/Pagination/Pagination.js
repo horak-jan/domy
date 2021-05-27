@@ -6,7 +6,13 @@ const Pagination = (amountOfAllHouses, perPage) => {
   const firstHouseActualPage = lastHouseActualPage - perPage;
   const totalPages = Math.ceil(amountOfAllHouses / perPage);
 
-  return [firstHouseActualPage, lastHouseActualPage, totalPages, setActualPage];
+  return [
+    firstHouseActualPage,
+    lastHouseActualPage,
+    totalPages,
+    actualPage,
+    setActualPage,
+  ];
 };
 
 export default Pagination;

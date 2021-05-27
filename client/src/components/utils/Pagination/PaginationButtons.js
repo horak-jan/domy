@@ -13,6 +13,11 @@ const PaginationButtons = (props) => {
     <div className="pagination-buttons">
       {totalPagesInArray.map((pageNumber) => (
         <button
+          className={
+            pageNumber == props.actualPage
+              ? "selected-pagination-button"
+              : "pagination-button"
+          }
           key={pageNumber}
           onClick={() => props.setActualPage(pageNumber)}
         >

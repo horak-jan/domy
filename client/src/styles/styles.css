@@ -967,6 +967,37 @@
   margin-bottom: 2vh;
 }
 
+.houses .browse-wrapper .pagination-buttons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.houses .browse-wrapper .pagination-buttons button {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 5vh;
+  font-weight: 650;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 2px 2px 3px 1px #000;
+          box-shadow: 2px 2px 3px 1px #000;
+  letter-spacing: 0.1rem;
+  margin-left: 5px;
+  background-color: white;
+  border: none;
+}
+
+.houses .browse-wrapper .pagination-buttons .selected-pagination-button {
+  color: #539701;
+  background-color: #daffda;
+}
+
 .footer {
   width: 100vw;
   color: #bcbcbc;

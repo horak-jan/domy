@@ -855,6 +855,29 @@ $primary-dark-grey: #323232;
         }
       }
     }
+    .pagination-buttons {
+      justify-content: center;
+      margin-bottom: 5vh;
+      display: flex;
+      button {
+        font-size: 16px;
+        height: 45px;
+        width: 45px;
+        margin-bottom: 5vh;
+        font-weight: 650;
+        align-content: center;
+        box-shadow: 2px 2px 3px 1px #000;
+        letter-spacing: 0.1rem;
+        margin-left: 5px;
+        background-color: white;
+        border: none;
+      }
+
+      .selected-pagination-button {
+        color: $primary-green;
+        background-color: #daffda;
+      }
+    }
   }
 }
 

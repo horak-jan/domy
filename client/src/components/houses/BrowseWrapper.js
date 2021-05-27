@@ -9,6 +9,7 @@ const BrowseWrapper = (props) => {
     firstHouseActualPage,
     lastHouseActualPage,
     totalPages,
+    actualPage,
     setActualPage,
   ] = Pagination(allHouses.length, perPage);
 
@@ -22,6 +23,7 @@ const BrowseWrapper = (props) => {
       <BrowseHouses allHouses={housesOnActualPage} />
 
       <PaginationButtons
+        actualPage={actualPage}
         setActualPage={setActualPage}
         totalPages={totalPages}
       />
