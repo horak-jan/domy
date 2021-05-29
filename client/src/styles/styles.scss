@@ -719,6 +719,29 @@ $primary-dark-grey: #323232;
   .house-details-info {
     margin-top: 5 vh;
   }
+  .house-details-middle {
+    margin-bottom: 5vh;
+    text-align: center;
+    h2 {
+      margin-top: 5vh;
+      margin-bottom: 3vh;
+    }
+    h2:after {
+      content: "";
+      position: absolute;
+      bottom: 20.75rem;
+      left: 7rem;
+      width: 10rem;
+      height: 0.4rem;
+      background: $primary-green;
+    }
+    h3 {
+      margin-bottom: 3vh;
+    }
+    p {
+      margin-bottom: 3vh;
+    }
+  }
 }
 
 // pergolas
