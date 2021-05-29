@@ -516,6 +516,7 @@ $primary-dark-grey: #323232;
       }
     }
   }
+
   .home-bottom {
     min-height: 40vh;
     .home-bottom-stripe {
@@ -537,6 +538,7 @@ $primary-dark-grey: #323232;
           font-size: 50px;
           margin-bottom: 2vh;
         }
+
         p {
           font-size: 16px;
           margin-bottom: 1vh;
@@ -545,6 +547,9 @@ $primary-dark-grey: #323232;
           font-weight: 700;
           text-transform: uppercase;
         }
+      }
+      .home-bottom-text-paragraph:first-of-type h3 {
+        padding-top: 3vh;
       }
     }
     img {
@@ -560,7 +565,6 @@ $primary-dark-grey: #323232;
       padding: 10px;
       position: relative;
       top: -90px;
-      margin-bottom: 5vh;
       h1 {
         color: #f3f3f3;
         font-weight: 700;
@@ -664,6 +668,7 @@ $primary-dark-grey: #323232;
   }
 
   // MOBIL
+  // utils
   .gallery {
     width: 100vw;
     text-align: center;
@@ -687,6 +692,32 @@ $primary-dark-grey: #323232;
         height: 50vh;
       }
     }
+  }
+}
+
+// house details
+// MOBIL
+.house-details {
+  .image-carousel {
+    height: 40vh;
+    .large-image {
+      height: 25vh;
+      width: 100vw;
+    }
+    .rest-of-house-images {
+      margin-top: 5vh;
+      width: 100vw;
+      display: flex;
+      height: 10vh;
+      justify-content: space-around;
+      img {
+        height: 10vh;
+        width: 22vw;
+      }
+    }
+  }
+  .house-details-info {
+    margin-top: 5 vh;
   }
 }
 
@@ -768,19 +799,22 @@ $primary-dark-grey: #323232;
         padding-bottom: 2vh;
         font-size: 20px;
       }
-      .sort-button {
-        margin-right: 5px;
-        font-size: 17px;
-        border-radius: 5px;
-        padding: 5px;
-      }
-      .active-sort-button {
-        color: white;
-        background-color: $primary-green;
-        margin-right: 5px;
-        font-size: 17px;
-        border-radius: 5px;
-        padding: 5px;
+      .sort-buttons {
+        .sort-button {
+          background-color: white;
+          margin-right: 5px;
+          font-size: 17px;
+          border-radius: 5px;
+          padding: 5px;
+        }
+        .active-sort-button {
+          color: white;
+          background-color: $primary-green;
+          margin-right: 5px;
+          font-size: 17px;
+          border-radius: 5px;
+          padding: 5px;
+        }
       }
     }
   }
@@ -809,6 +843,7 @@ $primary-dark-grey: #323232;
       .single-browse-house {
         margin: 0 auto 5vh;
         width: 90vw;
+
         h2 {
           text-align: center;
           margin-bottom: 2vh;
@@ -821,7 +856,6 @@ $primary-dark-grey: #323232;
           border: 1px solid $footer-grey;
           border-top: none;
           padding: 10px;
-
           .rooms-and-bills {
             display: flex;
             justify-content: space-around;
@@ -852,6 +886,16 @@ $primary-dark-grey: #323232;
               margin-bottom: 2vh;
             }
           }
+          .pick-a-house-button {
+            color: white;
+            background-color: $primary-green;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px auto;
+            position: relative;
+            left: 30%;
+          }
         }
       }
     }
@@ -866,7 +910,7 @@ $primary-dark-grey: #323232;
         margin-bottom: 5vh;
         font-weight: 650;
         align-content: center;
-        box-shadow: 2px 2px 3px 1px #000;
+        box-shadow: 1px 2px 3px 1px #000;
         letter-spacing: 0.1rem;
         margin-left: 5px;
         background-color: white;
@@ -874,8 +918,8 @@ $primary-dark-grey: #323232;
       }
 
       .selected-pagination-button {
-        color: $primary-green;
-        background-color: #daffda;
+        color: whitesmoke;
+        background-color: $primary-green;
       }
     }
   }
@@ -891,6 +935,8 @@ $primary-dark-grey: #323232;
   padding-top: 5vh;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+
   h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -1265,6 +1311,25 @@ $primary-dark-grey: #323232;
     }
   }
 
+  // house details
+  // TABLET
+  .house-details {
+    .image-carousel {
+      height: 80vh;
+      .large-image {
+        height: 65vh;
+        width: 100vw;
+      }
+      .rest-of-house-images {
+        margin: 1px;
+        img {
+          height: 15vh;
+          width: 24vw;
+        }
+      }
+    }
+  }
+
   // pergolas
   // TABLET
   .pergolas {
@@ -1342,7 +1407,18 @@ $primary-dark-grey: #323232;
     .home-top {
       height: 75vh;
     }
-
+    .home-middle {
+      .home-presentation div {
+        img {
+          width: 80%;
+          height: 20vh;
+          margin-left: 10%;
+        }
+        div {
+          width: 60%;
+        }
+      }
+    }
     .home-bottom {
       height: 100vh;
       .home-bottom-stripe {
@@ -1355,6 +1431,9 @@ $primary-dark-grey: #323232;
         }
         .home-bottom-text-paragraph {
           margin-top: 10vh;
+        }
+        .home-bottom-text-paragraph:first-of-type h3 {
+          padding-top: 0;
         }
       }
 
@@ -1370,10 +1449,12 @@ $primary-dark-grey: #323232;
         top: -400px;
         h1 {
           position: absolute;
+          left: 30px;
         }
         h2 {
           position: absolute;
           top: 75px;
+          left: 30px;
         }
         .home-bottom-last-p {
           margin-top: 10vh;

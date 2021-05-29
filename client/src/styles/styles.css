@@ -601,6 +601,10 @@
   text-transform: uppercase;
 }
 
+.home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph:first-of-type h3 {
+  padding-top: 3vh;
+}
+
 .home .home-bottom img {
   width: 90%;
   position: relative;
@@ -615,7 +619,6 @@
   padding: 10px;
   position: relative;
   top: -90px;
-  margin-bottom: 5vh;
 }
 
 .home .home-bottom .home-bottom-last h1 {
@@ -778,6 +781,35 @@
   height: 50vh;
 }
 
+.house-details .image-carousel {
+  height: 40vh;
+}
+
+.house-details .image-carousel .large-image {
+  height: 25vh;
+  width: 100vw;
+}
+
+.house-details .image-carousel .rest-of-house-images {
+  margin-top: 5vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.house-details .image-carousel .rest-of-house-images img {
+  height: 10vh;
+  width: 22vw;
+}
+
+.house-details .house-details-info {
+  margin-top: 5 vh;
+}
+
 .pergolas {
   width: 100vw;
   max-width: 1200px;
@@ -868,14 +900,15 @@
   font-size: 20px;
 }
 
-.houses .filter-and-sort .sort .sort-button {
+.houses .filter-and-sort .sort .sort-buttons .sort-button {
+  background-color: white;
   margin-right: 5px;
   font-size: 17px;
   border-radius: 5px;
   padding: 5px;
 }
 
-.houses .filter-and-sort .sort .active-sort-button {
+.houses .filter-and-sort .sort .sort-buttons .active-sort-button {
   color: white;
   background-color: #539701;
   margin-right: 5px;
@@ -967,6 +1000,17 @@
   margin-bottom: 2vh;
 }
 
+.houses .browse-wrapper .browse-houses .single-browse-house .single-browse-house-details .pick-a-house-button {
+  color: white;
+  background-color: #539701;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px auto;
+  position: relative;
+  left: 30%;
+}
+
 .houses .browse-wrapper .pagination-buttons {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -985,8 +1029,8 @@
   font-weight: 650;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-shadow: 2px 2px 3px 1px #000;
-          box-shadow: 2px 2px 3px 1px #000;
+  -webkit-box-shadow: 1px 2px 3px 1px #000;
+          box-shadow: 1px 2px 3px 1px #000;
   letter-spacing: 0.1rem;
   margin-left: 5px;
   background-color: white;
@@ -994,8 +1038,8 @@
 }
 
 .houses .browse-wrapper .pagination-buttons .selected-pagination-button {
-  color: #539701;
-  background-color: #daffda;
+  color: whitesmoke;
+  background-color: #539701;
 }
 
 .footer {
@@ -1006,6 +1050,8 @@
   padding-top: 5vh;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .footer h2 {
@@ -1374,6 +1420,20 @@
   .houses .browse-wrapper .browse-houses .single-browse-house .main-house-image {
     width: 380px;
   }
+  .house-details .image-carousel {
+    height: 80vh;
+  }
+  .house-details .image-carousel .large-image {
+    height: 65vh;
+    width: 100vw;
+  }
+  .house-details .image-carousel .rest-of-house-images {
+    margin: 1px;
+  }
+  .house-details .image-carousel .rest-of-house-images img {
+    height: 15vh;
+    width: 24vw;
+  }
   .pergolas .pergola-type .main-image-part {
     height: 40vh;
   }
@@ -1451,6 +1511,14 @@
   .home .home-top {
     height: 75vh;
   }
+  .home .home-middle .home-presentation div img {
+    width: 80%;
+    height: 20vh;
+    margin-left: 10%;
+  }
+  .home .home-middle .home-presentation div div {
+    width: 60%;
+  }
   .home .home-bottom {
     height: 100vh;
   }
@@ -1468,6 +1536,9 @@
   .home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph {
     margin-top: 10vh;
   }
+  .home .home-bottom .home-bottom-stripe .home-bottom-text-paragraph:first-of-type h3 {
+    padding-top: 0;
+  }
   .home .home-bottom img {
     width: 710px;
     position: relative;
@@ -1482,10 +1553,12 @@
   }
   .home .home-bottom .home-bottom-last h1 {
     position: absolute;
+    left: 30px;
   }
   .home .home-bottom .home-bottom-last h2 {
     position: absolute;
     top: 75px;
+    left: 30px;
   }
   .home .home-bottom .home-bottom-last .home-bottom-last-p {
     margin-top: 10vh;
