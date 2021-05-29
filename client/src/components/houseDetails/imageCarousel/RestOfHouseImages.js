@@ -1,4 +1,4 @@
-const ResOfHouseImages = (props) => {
+const RestOfHouseImages = (props) => {
   return (
     <div className="rest-of-house-images">
       {props.restOfHouseImages.map((image) => (
@@ -13,4 +13,4 @@ const ResOfHouseImages = (props) => {
   );
 };
 
-export default ResOfHouseImages;
+export default RestOfHouseImages;
