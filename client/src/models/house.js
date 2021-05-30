@@ -6,21 +6,23 @@ const HouseSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-
-    sqMetres: {
+    id: {
       type: Number,
       required: true,
     },
-
+    sqMetresToUse: {
+      type: Number,
+      required: true,
+    },
+    sqMetresToBuild: {
+      type: Number,
+      required: true,
+    },
     rooms: {
       type: String,
       required: true,
     },
-    zastaveno: {
-      type: Number,
-      required: true,
-    },
-    dimensions: {
+    bills: {
       type: String,
       required: true,
     },
@@ -29,18 +31,25 @@ const HouseSchema = new mongoose.Schema(
         type: String,
       },
     ],
-    prices: [
-      {
-        type: Number,
+    fullHousePrices: {
+      perMonth: {
+        type: String,
+        required: true,
       },
-    ],
-    hypoteka: {
-      type: String,
-      required: true,
+      total: {
+        type: String,
+        required: true,
+      },
     },
-    naklady: {
-      type: String,
-      required: true,
+    basicHousePrices: {
+      perMonth: {
+        type: String,
+        required: true,
+      },
+      total: {
+        type: String,
+        required: true,
+      },
     },
   },
   { timestamps: true }
