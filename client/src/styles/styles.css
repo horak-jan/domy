@@ -791,7 +791,7 @@
 }
 
 .house-details .image-carousel .rest-of-house-images {
-  margin-top: 5vh;
+  margin-top: 1vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +802,7 @@
 }
 
 .house-details .image-carousel .rest-of-house-images img {
-  height: 10vh;
+  height: 13vh;
   width: 22vw;
 }
 
@@ -820,22 +820,79 @@
   margin-bottom: 3vh;
 }
 
-.house-details .house-details-middle h2:after {
-  content: "";
-  position: absolute;
-  bottom: 20.75rem;
-  left: 7rem;
-  width: 10rem;
-  height: 0.4rem;
-  background: #539701;
-}
-
 .house-details .house-details-middle h3 {
   margin-bottom: 3vh;
 }
 
 .house-details .house-details-middle p {
   margin-bottom: 3vh;
+}
+
+.house-details .contact-middle {
+  max-width: 1200px;
+  margin: 3vh auto;
+  padding: 10px;
+}
+
+.house-details .contact-middle h3 {
+  text-align: center;
+}
+
+.house-details .contact-middle .contact-form {
+  margin: 5vh auto;
+  text-align: center;
+}
+
+.house-details .contact-middle .contact-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.house-details .contact-middle input {
+  height: 35px;
+  font-size: 20px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: #bcbcbc 1px solid;
+}
+
+.house-details .contact-middle .form-error {
+  color: #e1251b;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.house-details .contact-middle button {
+  margin: 3vh auto;
+  color: white;
+  background-color: #539701;
+  font-size: 15px;
+  width: 200px;
+  display: block;
+  height: 40px;
+}
+
+.house-details .house-details-bottom {
+  margin: 5vh auto;
+  max-width: 600px;
+}
+
+.house-details .house-details-bottom h2 {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.house-details .house-details-bottom p {
+  margin-bottom: 2vh;
+  margin-left: 15px;
+}
+
+.house-details .house-details-bottom p:before {
+  content: url(https://res.cloudinary.com/dsdaneoq8/image/upload/v1622399251/domy/check-icon_dnnlwb.png);
 }
 
 .pergolas {
@@ -1462,6 +1519,15 @@
     height: 15vh;
     width: 24vw;
   }
+  .house-details .contact-middle h3 {
+    font-size: 22px;
+  }
+  .house-details .contact-middle input {
+    width: 350px;
+  }
+  .house-details .house-details-bottom p {
+    margin-left: 25%;
+  }
   .pergolas .pergola-type .main-image-part {
     height: 40vh;
   }
@@ -1601,6 +1667,9 @@
   }
   .home .home-bottom .home-bottom-last .home-bottom-last-p p {
     max-width: 400px;
+  }
+  .house-details .image-carousel {
+    max-width: 800px;
   }
   .gardens .gardens-slide {
     max-width: 1200px;
