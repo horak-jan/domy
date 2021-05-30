@@ -10,6 +10,13 @@ const SingleBrowseHouseDetails = (props) => {
         fullHousePrices={props.fullHousePrices}
         basicHousePrices={props.basicHousePrices}
       />
+
+      <button
+        className="pick-a-house-button"
+        onClick={() => props.pickThisHouse(props.id)}
+      >
+        Více informací
+      </button>
     </div>
   );
 };
