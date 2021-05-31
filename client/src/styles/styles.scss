@@ -157,6 +157,9 @@ $primary-dark-grey: #323232;
       .contact-form {
         margin: 5vh auto;
         text-align: center;
+        h3 {
+          color: $primary-green;
+        }
         label {
           display: block;
           margin-top: 30px;
@@ -377,6 +380,9 @@ $primary-dark-grey: #323232;
     }
     .contact-form {
       margin: 5vh auto;
+      h3 {
+        color: $primary-green;
+      }
       text-align: center;
       label {
         display: block;
@@ -699,7 +705,7 @@ $primary-dark-grey: #323232;
 // MOBIL
 .house-details {
   .image-carousel {
-    height: 40vh;
+    height: 36vh;
     .large-image {
       height: 25vh;
       width: 100vw;
@@ -711,13 +717,77 @@ $primary-dark-grey: #323232;
       height: 10vh;
       justify-content: space-around;
       img {
-        height: 13vh;
+        height: 10vh;
         width: 22vw;
       }
     }
   }
   .house-details-info {
-    margin-top: 5 vh;
+    margin: 5vh auto 0;
+    h1 {
+      margin: 3vh auto;
+      text-align: center;
+    }
+    .house-prices-wrapper {
+      width: 100vw;
+      background-color: #f9f6f6;
+      padding-top: 5vh;
+      padding-bottom: 2vh;
+
+      .house-prices-content {
+        margin: 0 auto 3vh;
+        width: 80vw;
+        max-width: 600px;
+
+        .house-price-single {
+          margin-bottom: 3vh;
+          border-radius: 10px;
+          padding: 5px;
+          background-color: white;
+          border: 1px solid $primary-dark-grey;
+          img {
+            display: inline-block;
+            height: 50px;
+          }
+          h2 {
+            text-align: center;
+            margin-bottom: 2vh;
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: underline;
+            text-decoration-color: $primary-green;
+            font-size: 25px;
+          }
+          p {
+            margin-bottom: 2vh;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .house-dimensions {
+      margin: 2vh auto;
+      width: 150px;
+      max-width: 800px;
+      div {
+        margin: 3vh auto;
+        img {
+          display: inline-block;
+        }
+        .text {
+          display: inline-block;
+          vertical-align: baseline;
+          margin-left: 10px;
+          p {
+            display: block;
+          }
+          p:nth-child(2) {
+            color: #46a0d5;
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
   .house-details-middle {
     margin-bottom: 5vh;
@@ -744,6 +814,9 @@ $primary-dark-grey: #323232;
     }
     .contact-form {
       margin: 5vh auto;
+      h3 {
+        color: $primary-green;
+      }
       text-align: center;
       label {
         display: block;
@@ -781,7 +854,7 @@ $primary-dark-grey: #323232;
   }
 
   .house-details-bottom {
-    margin: 5vh auto;
+    margin: 5vh auto 8vh;
     max-width: 600px;
 
     h2 {
@@ -1406,6 +1479,24 @@ $primary-dark-grey: #323232;
       }
     }
 
+    .house-details-info {
+      .house-prices-wrapper {
+        .house-prices-content {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100vw;
+          max-width: 1200px;
+          .house-price-single {
+            width: 300px;
+          }
+        }
+      }
+      .house-dimensions {
+        display: flex;
+        width: 800px;
+      }
+    }
+
     .contact-middle {
       h3 {
         font-size: 22px;
@@ -1569,7 +1660,10 @@ $primary-dark-grey: #323232;
   // PC
   .house-details {
     .image-carousel {
-      max-width: 800px;
+      .rest-of-house-images {
+        max-width: 1000px;
+        margin: 1vh auto;
+      }
     }
   }
 

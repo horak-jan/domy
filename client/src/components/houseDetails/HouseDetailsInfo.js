@@ -1,3 +1,4 @@
+import HouseDimensions from "./HouseDimensions";
 import HousePrices from "./HousePrices";
 
 const HouseDetailsInfo = (props) => {
@@ -5,6 +6,8 @@ const HouseDetailsInfo = (props) => {
     name,
     sqMetresToUse,
     rooms,
+    dimensions,
+    sqMetresToBuild,
     fullHousePrices,
     basicHousePrices,
   } = props.house;
@@ -14,6 +17,12 @@ const HouseDetailsInfo = (props) => {
       <HousePrices
         fullHousePrices={fullHousePrices}
         basicHousePrices={basicHousePrices}
+      />
+      <HouseDimensions
+        sqMetresToUse={sqMetresToUse}
+        rooms={rooms}
+        dimensions={dimensions}
+        sqMetresToBuild={sqMetresToBuild}
       />
     </div>
   );

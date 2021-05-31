@@ -6,32 +6,31 @@ import "../styles/styles.css";
 import { StateProvider } from "../state";
 import Navbar from "../views/Navbar";
 import Footer from "../views/Footer";
+import Loading from "./utils/Loading";
 
 const Home = lazy(() => import("../views/Home"));
 const Houses = lazy(() => import("../views/Houses"));
+const HouseDetails = lazy(() => import("../views/HouseDetails"));
 const Contact = lazy(() => import("../views/Contact"));
 const Gardens = lazy(() => import("../views/Gardens"));
 const GardenInfo = lazy(() => import("./gardens/GardenInfo"));
 const WoodInfo = lazy(() => import("./gardens/WoodInfo"));
 const FourOhFour = lazy(() => import("../views/FourOhFour"));
 const Terms = lazy(() => import("../views/TermsAndConditions"));
-
-import Pergolas from "../views/Pergolas";
-import Pools from "../views/Pools";
+const Pergolas = lazy(() => import("../views/Pergolas"));
+const Pools = lazy(() => import("../views/Pools"));
 
 const App = () => {
   const initialState = {
-    selectedHouse: {
-      singleHouse: {},
-    },
+    selectedHouseId: 6,
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case "pickHouse":
+      case "pickThisHouse":
         return {
           ...state,
-          selectedHouse: action.setHouse,
+          selectedHouseId: action.setHouseId,
         };
       default:
         return state;
@@ -41,7 +40,7 @@ const App = () => {
     <StateProvider initialState={initialState} reducer={reducer}>
       <Router>
         <Navbar />
-        <Suspense fallback={<div>Načítám...</div>}>
+        <Suspense fallback={<Loading />}>
           <Switch>
             <Route exact path="/domy" component={Houses} />
             <Route exact path="/zahrady" component={Gardens} />
@@ -49,6 +48,7 @@ const App = () => {
             <Route exact path="/realizace" component={GardenInfo} />
             <Route exact path="/pergoly" component={Pergolas} />
             <Route exact path="/bazeny" component={Pools} />
+            <Route exact path="/detail-domu" component={HouseDetails} />
             <Route exact path="/kontakt" component={Contact} />
             <Route exact path="/terms" component={Terms} />
             <Route exact path="/" component={Home} />

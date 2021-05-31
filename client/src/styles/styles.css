@@ -174,6 +174,10 @@
   text-align: center;
 }
 
+.pool .pool-middle .contact-middle .contact-form h3 {
+  color: #539701;
+}
+
 .pool .pool-middle .contact-middle .contact-form label {
   display: block;
   margin-top: 30px;
@@ -415,6 +419,10 @@
 .contact .contact-middle .contact-form {
   margin: 5vh auto;
   text-align: center;
+}
+
+.contact .contact-middle .contact-form h3 {
+  color: #539701;
 }
 
 .contact .contact-middle .contact-form label {
@@ -782,7 +790,7 @@
 }
 
 .house-details .image-carousel {
-  height: 40vh;
+  height: 36vh;
 }
 
 .house-details .image-carousel .large-image {
@@ -802,12 +810,88 @@
 }
 
 .house-details .image-carousel .rest-of-house-images img {
-  height: 13vh;
+  height: 10vh;
   width: 22vw;
 }
 
 .house-details .house-details-info {
-  margin-top: 5 vh;
+  margin: 5vh auto 0;
+}
+
+.house-details .house-details-info h1 {
+  margin: 3vh auto;
+  text-align: center;
+}
+
+.house-details .house-details-info .house-prices-wrapper {
+  width: 100vw;
+  background-color: #f9f6f6;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+.house-details .house-details-info .house-prices-wrapper .house-prices-content {
+  margin: 0 auto 3vh;
+  width: 80vw;
+  max-width: 600px;
+}
+
+.house-details .house-details-info .house-prices-wrapper .house-prices-content .house-price-single {
+  margin-bottom: 3vh;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #323232;
+}
+
+.house-details .house-details-info .house-prices-wrapper .house-prices-content .house-price-single img {
+  display: inline-block;
+  height: 50px;
+}
+
+.house-details .house-details-info .house-prices-wrapper .house-prices-content .house-price-single h2 {
+  text-align: center;
+  margin-bottom: 2vh;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #539701;
+          text-decoration-color: #539701;
+  font-size: 25px;
+}
+
+.house-details .house-details-info .house-prices-wrapper .house-prices-content .house-price-single p {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.house-details .house-details-info .house-dimensions {
+  margin: 2vh auto;
+  width: 150px;
+  max-width: 800px;
+}
+
+.house-details .house-details-info .house-dimensions div {
+  margin: 3vh auto;
+}
+
+.house-details .house-details-info .house-dimensions div img {
+  display: inline-block;
+}
+
+.house-details .house-details-info .house-dimensions div .text {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+.house-details .house-details-info .house-dimensions div .text p {
+  display: block;
+}
+
+.house-details .house-details-info .house-dimensions div .text p:nth-child(2) {
+  color: #46a0d5;
+  font-size: 15px;
 }
 
 .house-details .house-details-middle {
@@ -841,6 +925,10 @@
 .house-details .contact-middle .contact-form {
   margin: 5vh auto;
   text-align: center;
+}
+
+.house-details .contact-middle .contact-form h3 {
+  color: #539701;
 }
 
 .house-details .contact-middle .contact-form label {
@@ -877,7 +965,7 @@
 }
 
 .house-details .house-details-bottom {
-  margin: 5vh auto;
+  margin: 5vh auto 8vh;
   max-width: 600px;
 }
 
@@ -1519,6 +1607,25 @@
     height: 15vh;
     width: 24vw;
   }
+  .house-details .house-details-info .house-prices-wrapper .house-prices-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vw;
+    max-width: 1200px;
+  }
+  .house-details .house-details-info .house-prices-wrapper .house-prices-content .house-price-single {
+    width: 300px;
+  }
+  .house-details .house-details-info .house-dimensions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 800px;
+  }
   .house-details .contact-middle h3 {
     font-size: 22px;
   }
@@ -1668,8 +1775,9 @@
   .home .home-bottom .home-bottom-last .home-bottom-last-p p {
     max-width: 400px;
   }
-  .house-details .image-carousel {
-    max-width: 800px;
+  .house-details .image-carousel .rest-of-house-images {
+    max-width: 1000px;
+    margin: 1vh auto;
   }
   .gardens .gardens-slide {
     max-width: 1200px;

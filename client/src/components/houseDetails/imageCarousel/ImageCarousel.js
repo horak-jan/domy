@@ -4,6 +4,7 @@ import RestOfHouseImages from "./RestOfHouseImages";
 
 const ImageCarousel = (props) => {
   const { images } = props;
+  // set first image as a large one
   const [largeImage, setLargeImage] = useState(images[[0]]);
 
   // all house images except large one
