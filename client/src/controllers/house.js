@@ -48,8 +48,7 @@ exports.update = async (req, res) => {
 exports.show = async (req, res) => {
   try {
     const id = req.params.id;
-
-    const house = await House.findById(id);
+    const house = await House.findOne({ id: id });
 
     if (!house)
       return res.status(401).json({ message: "Dům s tímto ID neexistuje" });

@@ -1,11 +1,8 @@
-import house from "./../../housetest1.json";
 import HouseDetailsInfo from "./HouseDetailsInfo";
 import ImageCarousel from "./imageCarousel/ImageCarousel";
 
-const HouseDetailsTop = () => {
-  // fetch house
-  // const [selectedHouseId, dispatch] = useStateValue();
-
+const HouseDetailsTop = (props) => {
+  const { house } = props;
   return (
     <div className="house-details-top">
       <ImageCarousel images={house.images} />

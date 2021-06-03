@@ -7,7 +7,7 @@ exports.index = async (req, res) => {
   try {
     const basicHouseInfo = await BasicHouseInfo.find();
 
-    res.status(200).json({ basicHouseInfo: basicHouseInfo });
+    res.status(200).json({ allHouses: basicHouseInfo });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

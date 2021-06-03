@@ -22,6 +22,10 @@ const HouseSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    dimensions: {
+      type: String,
+      required: true,
+    },
     bills: {
       type: String,
       required: true,

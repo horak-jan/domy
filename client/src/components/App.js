@@ -2,12 +2,14 @@ import { lazy, Suspense } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// load always
 import "../styles/styles.css";
 import { StateProvider } from "../state";
 import Navbar from "../views/Navbar";
 import Footer from "../views/Footer";
 import Loading from "./utils/Loading";
 
+// load on demand
 const Home = lazy(() => import("../views/Home"));
 const Houses = lazy(() => import("../views/Houses"));
 const HouseDetails = lazy(() => import("../views/HouseDetails"));
@@ -22,7 +24,7 @@ const Pools = lazy(() => import("../views/Pools"));
 
 const App = () => {
   const initialState = {
-    selectedHouseId: 6,
+    selectedHouseId: 57,
   };
 
   const reducer = (state, action) => {

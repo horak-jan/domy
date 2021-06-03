@@ -4,9 +4,9 @@ const BasicHouseInfo = require("../controllers/basicHouseInfo");
 const router = express.Router();
 
 //INDEX
-router.get("/", House.index);
+router.get("/", BasicHouseInfo.index);
 
 //STORE
-router.post("/", House.store);
+router.post("/", BasicHouseInfo.store);
 
 module.exports = router;

@@ -11,6 +11,7 @@ const address = require("./address");
 const presentation = require("./presentation");
 const image = require("./image");
 const pool = require("./pool");
+const basicHouseInfo = require("./basicHouseInfo");
 
 module.exports = (app) => {
   app.get("/", (req, res) => {
@@ -27,4 +28,5 @@ module.exports = (app) => {
   app.use("/api/presentation", presentation);
   app.use("/api/image", image);
   app.use("/api/pool", pool);
+  app.use("/api/basicinfo", basicHouseInfo);
 };
