@@ -768,7 +768,7 @@ $primary-dark-grey: #323232;
     .house-dimensions {
       margin: 2vh auto;
       width: 150px;
-      max-width: 800px;
+      max-width: 768px;
       div {
         margin: 3vh auto;
         img {
@@ -1467,7 +1467,7 @@ $primary-dark-grey: #323232;
     .image-carousel {
       height: 80vh;
       .large-image {
-        height: 65vh;
+        height: 70vh;
         width: 100vw;
       }
       .rest-of-house-images {
@@ -1480,6 +1480,9 @@ $primary-dark-grey: #323232;
     }
 
     .house-details-info {
+      h1 {
+        margin: 8vh auto 4vh;
+      }
       .house-prices-wrapper {
         .house-prices-content {
           display: flex;
@@ -1493,7 +1496,7 @@ $primary-dark-grey: #323232;
       }
       .house-dimensions {
         display: flex;
-        width: 800px;
+        width: 768px;
       }
     }
 
@@ -1660,9 +1663,20 @@ $primary-dark-grey: #323232;
   // PC
   .house-details {
     .image-carousel {
+      .large-image {
+        height: 70vh;
+        max-width: 1200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .rest-of-house-images {
         max-width: 1000px;
         margin: 1vh auto;
+        img {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
       }
     }
   }

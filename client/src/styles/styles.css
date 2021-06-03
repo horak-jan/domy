@@ -868,7 +868,7 @@
 .house-details .house-details-info .house-dimensions {
   margin: 2vh auto;
   width: 150px;
-  max-width: 800px;
+  max-width: 768px;
 }
 
 .house-details .house-details-info .house-dimensions div {
@@ -1597,7 +1597,7 @@
     height: 80vh;
   }
   .house-details .image-carousel .large-image {
-    height: 65vh;
+    height: 70vh;
     width: 100vw;
   }
   .house-details .image-carousel .rest-of-house-images {
@@ -1606,6 +1606,9 @@
   .house-details .image-carousel .rest-of-house-images img {
     height: 15vh;
     width: 24vw;
+  }
+  .house-details .house-details-info h1 {
+    margin: 8vh auto 4vh;
   }
   .house-details .house-details-info .house-prices-wrapper .house-prices-content {
     display: -webkit-box;
@@ -1624,7 +1627,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 800px;
+    width: 768px;
   }
   .house-details .contact-middle h3 {
     font-size: 22px;
@@ -1775,9 +1778,20 @@
   .home .home-bottom .home-bottom-last .home-bottom-last-p p {
     max-width: 400px;
   }
+  .house-details .image-carousel .large-image {
+    height: 70vh;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .house-details .image-carousel .rest-of-house-images {
     max-width: 1000px;
     margin: 1vh auto;
+  }
+  .house-details .image-carousel .rest-of-house-images img {
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .gardens .gardens-slide {
     max-width: 1200px;
