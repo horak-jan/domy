@@ -18,7 +18,7 @@ Residential construction company app.
 
 Residential construction company app.
 
-You can find information regarding house pictures, prices, disposition etc. 
+You can find information regarding houses, pictures, prices, disposition etc. 
 App also features pools, pergolas, gardens, contact details and maps. 
 
 
